@@ -5,6 +5,13 @@ function loadPage() {
     let escalaFoto;
     ctx.lineCap = 'round';
 
+    //FUNCION INICIAR CANVAS
+    function iniciarCanvas(){
+        ctx.fillStyle = "#FFFFFF";
+        ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+    }
+    iniciarCanvas();
+
     //FUNCION SELECTOR DE COLOR
     let colorPicker = document.querySelector('#js-color-picker');
     let dibujando = document.querySelector('#dibujar');
@@ -69,6 +76,7 @@ function loadPage() {
     let btnLimpiar = document.querySelector('#btn-limpiar');
     function limpiar() {
         ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+        iniciarCanvas();
     }
 
     //FUNCION GUARDAR FOTO
