@@ -6,7 +6,7 @@ function loadPage() {
     ctx.lineCap = 'round';
 
     //FUNCION INICIAR CANVAS
-    function iniciarCanvas(){
+    function iniciarCanvas() {
         ctx.fillStyle = "#FFFFFF";
         ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     }
@@ -31,7 +31,7 @@ function loadPage() {
 
     //FUNCION RELLENAR
     let btnRellenar = document.querySelector('#btn-rellenar');
-    function rellenarFondo(){
+    function rellenarFondo() {
         let color = colorPicker.value;
         ctx.fillStyle = color;
         ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
@@ -115,7 +115,7 @@ function loadPage() {
             let content = readerEvent.target.result;
             let image = new Image();
             image.src = content;
-            
+
             image.onload = function () {
                 img = this;
                 escalaFoto = Math.min(canvas.width / img.width, canvas.height / img.height);
@@ -124,9 +124,9 @@ function loadPage() {
                 cambiarColor();
                 rangoPincel();
             }
-            limpiar();           
+            limpiar();
         }
-        input.value = "";       
+        input.value = "";
     }
 
     //FUNCION SIN EFECTO
@@ -193,7 +193,7 @@ function loadPage() {
         ctx.putImageData(imgData, 0, 0);
     }
     btnBinarizacion.addEventListener('click', efectoBinario);
-  
+
     //FUNCION NEGATIVO
     let btnNegativo = document.querySelector('#btn-negativo');
     function efectoNegativo() {
@@ -208,6 +208,17 @@ function loadPage() {
         ctx.putImageData(imgData, 0, 0);
     }
     btnNegativo.addEventListener('click', efectoNegativo);
+
+    //FUNCION BLUR
+    let btnBlur = document.querySelector('#btn-blur');
+    function efectoBlur() {
+        let imgData = ctx.getImageData(0, 0, img.width * escalaFoto, img.height * escalaFoto);
+        let pixels = imgData.data;
+
+        
+        ctx.putImageData(imgData, 0, 0);
+    }
+    btnBlur.addEventListener('click', efectoBlur);
 
     //FUNCION BRILLO
     let rangoBrillo = document.querySelector('#brillo');
