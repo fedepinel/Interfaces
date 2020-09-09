@@ -21,31 +21,38 @@
 </head>
 
 <body>
-    <div>
-        <input type="radio" id="dibujar" name="radio" value="dibujando" checked>
-        <label for="dibujar">Dibujar</label>
-        <input type="radio" id="borrar" name="radio" value="borrando">
-        <label for="borrar">Borrador</label>
-    </div>
-    <div>
-        <input type="color" id="js-color-picker" class="color-picker">
-        <input type="range" id="js-line-range" min="1" max="72" value="1">
-        <label id="js-range-value">1 Px</label>
-        <button type="button" id="btn-limpiar">Limpiar</button>
-        <button type="button" id="btn-guardar">Guardar</button>
-        <button onclick="document.querySelector('#inputCargar').click();">Seleccionar Foto</button>
-        <input id="inputCargar" type="file" style="display: none;">
-        <canvas id="js-paint" class="paint-canvas" width="1000" height="600"></canvas>
-    </div>
-    <div>
-        <button type="button" id="btn-sinEfecto">Sin efecto</button>
-        <button type="button" id="btn-grises">Grises</button>
-        <button type="button" id="btn-sepia">Sepia</button>
-        <button type="button" id="btn-binarizacion">Binarizacion</button>
-        <button type="button" id="btn-negativo">Negativo</button>
-        Brillo<input type="range" id="brillo" min="0" max="100" value="0">
-        <button type="button" id="btn-brillo">Aplicar brillo</button>
+    <div class="container">
+        <div class="row barra-superior">
+            <div class="col">
+                <input type="radio" id="dibujar" name="radio" value="dibujando" checked>
+                <label for="dibujar">Dibujar</label>
+                <input type="radio" id="borrar" name="radio" value="borrando">
+                <label for="borrar">Borrador </label>
+                <input type="color" id="js-color-picker" class="color-picker">
+                Ancho pincel <input type="range" id="js-line-range" min="1" max="72" value="1">
+                <label id="js-range-value">1 Px </label>
+                <button type="button" id="btn-limpiar">Limpiar</button>
+                <button type="button" id="btn-guardar">Guardar</button>
+                <button onclick="document.querySelector('#inputCargar').click();">Seleccionar Foto</button>
+                <input id="inputCargar" type="file" style="display: none;">
+            </div>
+        </div>
+        <div class="row">
+            <canvas id="js-paint" class="paint-canvas" width="1200" height="600"></canvas>
+        </div>
+        <div class="row barra-inferior">
+            <button type="button" id="btn-sinEfecto">Sin efecto</button>
+            <button type="button" id="btn-grises">Grises</button>
+            <button type="button" id="btn-sepia">Sepia</button>
+            <button type="button" id="btn-binarizacion">Binarizacion</button>
+            <button type="button" id="btn-negativo">Negativo</button>
+        </div>
+        <div class="row inferior">
+            Brillo<input type="range" id="brillo" min="0" max="100" value="0">
+            <button type="button" id="btn-brillo">Aplicar brillo</button>
+            Saturacion<input type="range" id="saturacion" min="0" max="3" value="0">
+            <button type="button" id="btn-saturacion">Saturacion</button>
+        </div>
     </div>
 </body>
-
 </html>

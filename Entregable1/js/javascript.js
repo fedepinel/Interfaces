@@ -7,13 +7,15 @@ function loadPage() {
 
     //FUNCION SELECTOR DE COLOR
     let colorPicker = document.querySelector('#js-color-picker');
+    let dibujando = document.querySelector('#dibujar');
+    let borrando = document.querySelector('#borrar');
     function cambiarColor() {
         let color = colorPicker.value;
-        if (document.querySelector('#dibujar').checked) {
+        if (dibujando.checked) {
             ctx.globalCompositeOperation = 'source-over';
             ctx.strokeStyle = color;
         }
-        else if (document.querySelector('#borrar').checked) {
+        else if (borrando.checked) {
             ctx.globalCompositeOperation = 'destination-out';
         }
     }
@@ -52,6 +54,7 @@ function loadPage() {
         }
     }
 
+    //FUNCION LIMPIAR
     let btnLimpiar = document.querySelector('#btn-limpiar');
     function limpiar() {
         ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
@@ -82,19 +85,18 @@ function loadPage() {
     context.fillRect(0, 0, canvas.width, canvas.height);
 
     //Click en el ok del input
+
     input.onchange = e => {
-
+        ctx.globalCompositeOperation = 'source-over';
         let file = e.target.files[0];
-
         let reader = new FileReader();
         reader.readAsDataURL(file);
 
         reader.onload = readerEvent => {
             let content = readerEvent.target.result;
             let image = new Image();
-
             image.src = content;
-
+            
             image.onload = function () {
                 img = this;
                 escalaFoto = Math.min(canvas.width / img.width, canvas.height / img.height);
@@ -103,8 +105,9 @@ function loadPage() {
                 cambiarColor();
                 rangoPincel();
             }
+            limpiar();           
         }
-        input.value = "";
+        input.value = "";       
     }
 
     //FUNCION SIN EFECTO
@@ -170,6 +173,21 @@ function loadPage() {
         ctx.putImageData(imgData, 0, 0);
     }
     btnBinarizacion.addEventListener('click', efectoBinario);
+  
+    //FUNCION NEGATIVO
+    let btnNegativo = document.querySelector('#btn-negativo');
+    function efectoNegativo() {
+        let imgData = ctx.getImageData(0, 0, img.width * escalaFoto, img.height * escalaFoto);
+        let pixels = imgData.data;
+        for (let i = 0; i < pixels.length; i += 4) {
+            pixels[i] = 255 - pixels[i]; // R
+            pixels[i + 1] = 255 - pixels[i + 1]; // G
+            pixels[i + 2] = 255 - pixels[i + 2]; // B
+
+        }
+        ctx.putImageData(imgData, 0, 0);
+    }
+    btnNegativo.addEventListener('click', efectoNegativo);
 
     //FUNCION BRILLO
     let rangoBrillo = document.querySelector('#brillo');
@@ -194,21 +212,32 @@ function loadPage() {
     }
     btnBrillo.addEventListener('click', brillo);
 
-    //FUNCION NEGATIVO
-    let btnNegativo = document.querySelector('#btn-negativo');
-    function efectoNegativo() {
+    //FUNCION SATURACION
+    let btnSaturacion = document.querySelector('#btn-saturacion');
+    let rangoSaturacion = document.querySelector('#saturacion');
+    function efectoSaturado() {
         let imgData = ctx.getImageData(0, 0, img.width * escalaFoto, img.height * escalaFoto);
         let pixels = imgData.data;
         for (let i = 0; i < pixels.length; i += 4) {
-            pixels[i] = 255 - pixels[i]; // R
-            pixels[i + 1] = 255 - pixels[i + 1]; // G
-            pixels[i + 2] = 255 - pixels[i + 2]; // B
-
+            let value = parseInt(rangoSaturacion.value, 10);
+            let r = pixels[i];
+            let g = pixels[i + 1];
+            let b = pixels[i + 2];
+            let gray = 0.2989 * r + 0.5870 * g + 0.1140 * b; //weights from CCIR 601 spec
+            pixels[i] = -gray * value + pixels[i] * (1 + value);
+            pixels[i + 1] = -gray * value + pixels[i + 1] * (1 + value);
+            pixels[i + 2] = -gray * value + pixels[i + 2] * (1 + value);
+            //normalize over- and under-saturated values
+            if (pixels[i] > 255) pixels[i] = 255;
+            if (pixels[i + 1] > 255) pixels[i] = 255;
+            if (pixels[i + 2] > 255) pixels[i] = 255;
+            if (pixels[i] < 0) pixels[i] = 0;
+            if (pixels[i + 1] < 0) pixels[i] = 0;
+            if (pixels[i + 2] < 0) pixels[i] = 0;
         }
         ctx.putImageData(imgData, 0, 0);
     }
-    btnNegativo.addEventListener('click', efectoNegativo);
-
+    btnSaturacion.addEventListener('click', efectoSaturado);
 
     saveButton.addEventListener('click', guardar);
     btnLimpiar.addEventListener('click', limpiar);
