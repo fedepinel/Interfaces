@@ -12,13 +12,24 @@ function loadPage() {
     function cambiarColor() {
         let color = colorPicker.value;
         if (dibujando.checked) {
+            colorPicker.disabled = false;
             ctx.globalCompositeOperation = 'source-over';
             ctx.strokeStyle = color;
         }
         else if (borrando.checked) {
+            colorPicker.disabled = true;
             ctx.globalCompositeOperation = 'destination-out';
         }
     }
+
+    //FUNCION RELLENAR
+    let btnRellenar = document.querySelector('#btn-rellenar');
+    function rellenarFondo(){
+        let color = colorPicker.value;
+        ctx.fillStyle = color;
+        ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+    }
+    btnRellenar.addEventListener('click', rellenarFondo);
 
     //FUNCION GROSOR PINCEL    
     let lineWidthRange = document.querySelector('#js-line-range');
@@ -113,6 +124,7 @@ function loadPage() {
     //FUNCION SIN EFECTO
     let btnLimpio = document.querySelector('#btn-sinEfecto');
     function sinEfecto() {
+        ctx.globalCompositeOperation = 'source-over';
         ctx.drawImage(img, 0, 0, img.width * escalaFoto, img.height * escalaFoto);
     }
     btnLimpio.addEventListener('click', sinEfecto);
@@ -193,6 +205,7 @@ function loadPage() {
     let rangoBrillo = document.querySelector('#brillo');
     let btnBrillo = document.querySelector('#btn-brillo');
     function brillo() {
+        sinEfecto();
         let imgData = ctx.getImageData(0, 0, img.width * escalaFoto, img.height * escalaFoto);
         let pixels = imgData.data;
         let valor = parseInt(rangoBrillo.value, 10);
@@ -216,6 +229,7 @@ function loadPage() {
     let btnSaturacion = document.querySelector('#btn-saturacion');
     let rangoSaturacion = document.querySelector('#saturacion');
     function efectoSaturado() {
+        sinEfecto();
         let imgData = ctx.getImageData(0, 0, img.width * escalaFoto, img.height * escalaFoto);
         let pixels = imgData.data;
         for (let i = 0; i < pixels.length; i += 4) {

@@ -1,21 +1,27 @@
 body{
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(201, 201, 201);
     color: rgb(0, 0, 0);
 }
 
 .barra-superior, .barra-inferior, .inferior{
-    background-color: rgba(59, 59, 59, 0.692);
+    background-color: rgba(59, 59, 59, 0.541);
     justify-content: center;
     padding: 1%;
+    text-align: center;
 }
 
 .paint-canvas {
     background-color: white;
     border: 1px black solid;
     justify-content: center;
-    margin: 0 1% 0 -3%;
 }
   
 .color-picker {
     margin: 1%;
+}
+
+.btn{
+    border-color :rgb(196, 196, 196);
+    background-color: rgb(196, 196, 196);
+    margin: 0% 0.5%;
 }
