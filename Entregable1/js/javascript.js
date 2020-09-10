@@ -98,36 +98,38 @@ function loadPage() {
 
     //FUNCION CARGAR FOTO
     let input = document.querySelector('#inputCargar');
-    //Vacia el canvas
-    let context = canvas.getContext('2d');
-    context.fillStyle = "#FFFFFF"; // canvas background color
-    context.fillRect(0, 0, canvas.width, canvas.height);
+    //Vacia el canvas;
+    ctx.fillStyle = "#FFFFFF"; // canvas background color
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    //Click en el ok del input
-
-    input.onchange = e => {
-        ctx.globalCompositeOperation = 'source-over';
-        let file = e.target.files[0];
-        let reader = new FileReader();
-        reader.readAsDataURL(file);
-
-        reader.onload = readerEvent => {
-            let content = readerEvent.target.result;
-            let image = new Image();
-            image.src = content;
-
-            image.onload = function () {
-                img = this;
-                escalaFoto = Math.min(canvas.width / img.width, canvas.height / img.height);
-                ctx.drawImage(this, 0, 0, this.width * escalaFoto, this.height * escalaFoto);
-                ctx.lineCap = 'round';
-                cambiarColor();
-                rangoPincel();
+    function cargarFoto() {
+        document.querySelector('#inputCargar').click();
+        input.onchange = e => {
+            ctx.globalCompositeOperation = 'source-over';
+            let file = e.target.files[0];
+            let reader = new FileReader();
+            reader.readAsDataURL(file);
+    
+            reader.onload = readerEvent => {
+                let content = readerEvent.target.result;
+                let image = new Image();
+                image.src = content;
+    
+                image.onload = function () {
+                    img = this;
+                    escalaFoto = Math.min(canvas.width / img.width, canvas.height / img.height);
+                    ctx.drawImage(this, 0, 0, this.width * escalaFoto, this.height * escalaFoto);
+                    ctx.lineCap = 'round';
+                    cambiarColor();
+                    rangoPincel();
+                }
+                limpiar();
             }
-            limpiar();
-        }
-        input.value = "";
+            input.value = "";
+        }      
     }
+    document.querySelector('#btn-cargar').addEventListener("click", cargarFoto);
+
 
     //FUNCION SIN EFECTO
     let btnLimpio = document.querySelector('#btn-sinEfecto');
@@ -215,7 +217,7 @@ function loadPage() {
         let imgData = ctx.getImageData(0, 0, img.width * escalaFoto, img.height * escalaFoto);
         let pixels = imgData.data;
 
-        
+
         ctx.putImageData(imgData, 0, 0);
     }
     btnBlur.addEventListener('click', efectoBlur);
