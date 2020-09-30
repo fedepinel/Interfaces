@@ -25,9 +25,7 @@ function loadPage() {
         boardH = 6;
         color = {
             "player": {
-                0: "white",
-                1: "yellow",
-                2: "red"
+                0: "white"
             }
         };
         jugando = false
@@ -48,10 +46,7 @@ function loadPage() {
             img = this;
             ctx.drawImage(this, 100, 0 + squareSize, boardW * squareSize, boardH * squareSize);
             draw();
-
-
         }
-
 
         boardArray = [];
         for (y = 0; y < boardH; y++) {
@@ -83,7 +78,7 @@ function loadPage() {
     function draw() {
         for (y = 0; y < boardH; y++) {
             for (x = 0; x < boardW; x++) {
-                drawTile(x, y + 1, boardArray[y][x]);
+                dibujarFicha(x, y + 1, boardArray[y][x]);
             }
         }
         let imageFicha = new Image();
@@ -105,7 +100,7 @@ function loadPage() {
     }
 
     //Dibuja la ficha
-    function drawTile(x, y, tileColor) {
+    function dibujarFicha(x, y, tileColor) {
         let img = new Image();
         img.height = 75;
         img.width = 75;
@@ -137,7 +132,6 @@ function loadPage() {
 
     //Controla los movimientos del usuario
     function eventosJugador() {
-
         canvas.addEventListener("mousemove", (e) => {
             if (jugando) {
                 let imgFicha = new Image();
@@ -151,14 +145,13 @@ function loadPage() {
                 let x = e.offsetX - 36;
                 let y = e.offsetY - 36;
 
-
-                ctx.putImageData(imgDrag, 0, 0);
                 imgFicha.onload = function () {
+                    ctx.putImageData(imgDrag, 0, 0);
                     ctx.drawImage(this, x, y, this.width, this.height);
                 }
             }
-
-
+                            
+            
         })
 
         canvas.addEventListener("mousedown", (e) => {
