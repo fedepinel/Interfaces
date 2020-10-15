@@ -1,0 +1,56 @@
+body{
+    background-image: url("/imagenes/vueltaperfecta.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.barranav{
+    background-color: rgba(100, 100, 100, 0.452);
+    animation: entrada 1s;
+}
+
+@keyframes entrada {
+    from {
+        margin-top: 100%;
+    }
+    
+    to {
+        margin-top: 0%;
+    }
+}
+
+.container-countdown{
+    text-align: center;
+}
+
+#logo{
+    width: 130px;
+    height: 55px;
+}
+
+.layer {
+    min-height: 500px;
+    width: 100%;
+    height: 100%;
+    position: static;
+  top: 0;
+  left: 0;
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+@keyframes parallax {
+    0% {background-position-x: 0px;}
+    100% {background-position-x: -1920px;}
+}
+
+.niebla {        
+    background-image: url("/imagenes/parallax/niebla.png");     
+    animation: parallax 15s infinite linear;
+    transform: rotate(180deg);
+  }
+
+.viento {        
+    background-image: url("/imagenes/parallax/viento.png");     
+    animation: parallax 15s infinite linear;
+  }
