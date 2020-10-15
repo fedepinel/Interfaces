@@ -45,12 +45,12 @@ body{
 }
 
 .niebla {        
-    background-image: url("/imagenes/parallax/niebla.png");     
+    background-image: url("../imagenes/parallax/niebla.png");     
     animation: parallax 15s infinite linear;
     transform: rotate(180deg);
   }
 
 .viento {        
-    background-image: url("/imagenes/parallax/viento.png");     
+    background-image: url("../imagenes/parallax/viento.png");     
     animation: parallax 15s infinite linear;
   }
