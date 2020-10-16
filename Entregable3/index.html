@@ -22,32 +22,50 @@
 
 <body>
     <nav class="barranav navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
             <img src="imagenes/logo.png" id="logo" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav container">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="#">Calendario Eventos</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="#">Saludos a protagonistas</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link contador" id="countdown"></a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container-fluid container-countdown">
-        <h1>Tiempo restante para el estreno!</h1>
-        <h2 id="countdown"></h2>
-    </div>
-    <div class="layer niebla"></div>
     <div class="layer viento"></div>
+    <div class="layer niebla"></div>
+    <div class="grilla">
+        <h1>Personajes</h1>
+        <div>
+            <a href="#"><img src="imagenes/caracteres/shelby.jpg" alt="shelby"></a>
+        </div>
+        <div>
+            <a href="#"><img src="imagenes/caracteres/miles.jpg" alt="miles"></a>
+        </div>
+        <div>
+            <a href="#"><img src="imagenes/caracteres/iacocca.jpg" alt="iacocca"></a>
+        </div>
+        <div>
+            <a href="#"><img src="imagenes/caracteres/beebe.jpg" alt="beebe"></a>
+        </div>
+        <div>
+            <a href="#"><img src="imagenes/caracteres/ford.jpg" alt="ford"></a>
+        </div>
+    </div>
+    <!-- <div class="carrusel"></div> -->
 </body>
 
 </html>

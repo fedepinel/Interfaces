@@ -1,43 +1,21 @@
+/* body */
 body{
     background-image: url("../imagenes/vueltaperfecta.jpg");
     background-size: cover;
     background-repeat: repeat-y;
 }
 
-.barranav{
-    background-color: rgba(100, 100, 100, 0.452);
-    animation: entrada 1s;
-}
-
-@keyframes entrada {
-    from {
-        margin-top: 100%;
-    }
-    
-    to {
-        margin-top: 0%;
-    }
-}
-
-.container-countdown{
-    text-align: center;
-}
-
-#logo{
-    width: 130px;
-    height: 55px;
-}
-
 .layer {
     min-height: 500px;
     width: 100%;
     height: 100%;
-    position: static;
+    position: relative;
   top: 0;
   left: 0;
   background-repeat: repeat-x;
   background-size: contain;
 }
+
 
 @keyframes parallax {
     0% {background-position-x: 0px;}
@@ -47,10 +25,101 @@ body{
 .niebla {        
     background-image: url("../imagenes/parallax/niebla.png");     
     animation: parallax 15s infinite linear;
-    transform: rotate(180deg);
-  }
+    
+}
 
 .viento {        
     background-image: url("../imagenes/parallax/viento.png");     
     animation: parallax 15s infinite linear;
-  }
+    transform: rotate(180deg);
+}
+
+/* Barra de navegacion */
+.barranav{
+    background-color: rgba(100, 100, 100, 0.452);
+    animation: entradaBarra 1s;
+}
+
+@keyframes entradaBarra {
+    from {
+        margin-top: 100%;
+    }
+    
+    to {
+        margin-top: 0%;
+    }
+}
+
+li{
+    text-align: right;
+    transition: 0.5s;
+}
+
+li:hover{
+    font-weight: bold;
+    transition: 0.5s;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.486);
+    box-shadow: -1px 0 rgba(0, 0, 0, 0.644), 0 1px rgba(0, 0, 0, 0.644), 1px 0 rgba(0, 0, 0, 0.644), 0 -1px rgba(0, 0, 0, 0.644);
+}
+
+#logo{
+    width: 130px;
+    height: 55px;
+}
+
+/* .carrusel{
+    background-color: aqua;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    margin-top: 10%;
+} */
+
+/* Grilla de personajes */
+.grilla{
+    top: 5%;
+    margin-top: 5%;
+    position: absolute;
+    text-align: center;
+    animation: entradaTarjetas 1s;
+}
+
+.grilla h1{
+    margin-bottom: 2%;
+}
+
+.grilla div img{
+    width: 15%;
+    display: inline;
+    transition: 0.5s;
+    border-radius: 10px;
+    
+}
+
+.grilla div img:hover{
+    transition: 0.5s;
+    width: 16%;
+    display: inline;
+    box-shadow: 0 15px 15px 0 rgb(0, 0, 0);
+}
+
+.grilla div{
+    display: inline; 
+}
+
+@keyframes entradaTarjetas {
+    from {
+        margin-top: 100%;
+    }
+    
+    to {
+        margin-top: 5%;
+    }
+}
+
+/* Carrusel */
+

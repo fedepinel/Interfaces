@@ -1,29 +1,29 @@
 function loadPage() {
 
     //FUNCION COUNTDOWN
-    var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
-    // Update the count down every 1 second
-    var x = setInterval(function () {
+    let fechaEstreno = new Date("Jan 5, 2021 15:37:25").getTime();
+    //Actualiza el contado cada un segundo
+    let intervalo = setInterval(function () {
 
-        // Get today's date and time
-        var now = new Date().getTime();
+        //Obtiene la hora de la computadora *ver como lo extrae*
+        let now = new Date().getTime();
 
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
+        //Distancia entre la fecha establecida y la fecha de hoy
+        let diferencia = fechaEstreno - now;
 
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Se calculan los dias, horas, minutos y segundos
+        let days = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((diferencia % (1000 * 60)) / 1000);
 
-        // Display the result in the element with id="demo"
-        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+        //Muestra los resultados
+        document.getElementById("countdown").innerHTML = "Tiempo restante para el estreno! " + days + "d " + hours + "h "
             + minutes + "m " + seconds + "s ";
 
-        // If the count down is finished, write some text
-        if (distance < 0) {
-            clearInterval(x);
+        //Cuando la distancia es 0, osea cuando finalizo el contador
+        if (diferencia < 0) {
+            clearInterval(intervalo);
             document.getElementById("countdown").innerHTML = "La pelicula ya fue estrenada!";
         }
     }, 1000);
