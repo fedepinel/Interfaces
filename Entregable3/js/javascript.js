@@ -27,5 +27,62 @@ function loadPage() {
             document.getElementById("countdown").innerHTML = "La pelicula ya fue estrenada!";
         }
     }, 1000);
+
+    //Carrusel
+    let slide = 1;
+    showSlides(slide);
+
+    document.querySelector(".next").addEventListener("click", () => plusSlide(1));
+    document.querySelector(".prev").addEventListener("click", () => plusSlide(-1));
+    function plusSlide(n) {
+        showSlides(slide += n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        if (n > slides.length) { slide = 1 }
+        if (n < 1) { slide = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[slide - 1].style.display = "block";
+    }
+
+    
+    //Scroll
+    window.addEventListener("scroll", efectoScroll);
+    let scrollPos = 0;
+
+    function efectoScroll() {
+        let grilla =  document.getElementById("grilla");
+        console.log(window.scrollY);
+        let ancho = grilla.computedStyleMap().get('width');
+        let newSize;
+        if (window.scrollY >= scrollPos) {
+            newSize = parseInt(ancho) - 1;
+            scrollPos = window.scrollY;
+            console.log(scrollPos);
+        } else {
+            newSize = parseInt(ancho) + 1;
+            scrollPos = window.scrollY;
+            if (window.scrollY == 0) {
+                newSize = 100;
+            }
+        }
+        grilla.style.width = newSize + "%";
+    }
+
+    //Menu hamburguesa
+    document.getElementById("botondrop").addEventListener("click", myFunction);
+    function myFunction() {
+        var x = document.getElementById("navbarNav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
 }
 document.addEventListener("DOMContentLoaded", loadPage);
