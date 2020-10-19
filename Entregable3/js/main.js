@@ -28,7 +28,8 @@ function loadPage() {
         }
     }, 1000);
 
-    //Carrusel
+
+    // Carrusel
     let slide = 1;
     showSlides(slide);
 
@@ -50,13 +51,13 @@ function loadPage() {
         slides[slide - 1].style.display = "block";
     }
 
-    
-    //Scroll
+
+    // Scroll
     window.addEventListener("scroll", efectoScroll);
     let scrollPos = 0;
 
     function efectoScroll() {
-        let grilla =  document.getElementById("grilla");
+        let grilla = document.getElementById("grilla");
         console.log(window.scrollY);
         let ancho = grilla.computedStyleMap().get('width');
         let newSize;
@@ -74,15 +75,6 @@ function loadPage() {
         grilla.style.width = newSize + "%";
     }
 
-    //Menu hamburguesa
-    document.getElementById("botondrop").addEventListener("click", myFunction);
-    function myFunction() {
-        var x = document.getElementById("navbarNav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
+
 }
 document.addEventListener("DOMContentLoaded", loadPage);
