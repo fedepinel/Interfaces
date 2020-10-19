@@ -1,7 +1,7 @@
 function loadPage() {
 
     //FUNCION COUNTDOWN
-    let fechaEstreno = new Date("Jan 5, 2021 15:37:25").getTime();
+    let fechaEstreno = new Date("Dec 21, 2020 20:30:00").getTime();
     //Actualiza el contado cada un segundo
     let intervalo = setInterval(function () {
 
@@ -64,7 +64,6 @@ function loadPage() {
         if (window.scrollY >= scrollPos) {
             newSize = parseInt(ancho) - 1;
             scrollPos = window.scrollY;
-            console.log(scrollPos);
         } else {
             newSize = parseInt(ancho) + 1;
             scrollPos = window.scrollY;

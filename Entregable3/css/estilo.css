@@ -313,6 +313,92 @@ body{
     }
   }
 
+/* Formulario */
+
+.formulario {
+    border-radius: 5px;
+    background-color:rgba(100, 100, 100, 0.452);
+    padding: 20px;
+    margin: 5% 2%;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    left: 0;
+    animation: entradaForm 1s;
+}
+
+.formulario input, .formulario textarea{
+    width: 21%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 4px;
+    box-sizing: border-box; 
+    background-color: rgba(255, 255, 255, 0.692);
+}
+
+.formulario input:focus, .formulario textarea:focus{
+    animation: animacionInput 1s forwards;
+}
+
+#btnSubmit{
+    width: 100%;
+    background-color: #444444;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+}
+  
+#btnSubmit:hover {
+    background-color: #b6b6b6;
+    transition: 0.5s;
+}
+
+#btnSubmit:focus {
+    animation: animacionBtn 1s forwards;
+} 
+
+@keyframes animacionInput{
+    from {
+        width: 21%;
+    }
+    
+    to {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+    }
+}
+
+@keyframes animacionBtn{
+    from {
+        background-color: #b6b6b6;
+    }
+    
+    to {
+        background-image: linear-gradient(#b6b6b6, white);
+    }
+}
+
+@keyframes entradaForm{
+    from {
+        margin-top: 100%;
+    }
+    
+    to {
+        margin-top: 5%;
+    }
+  }
+
+  /* Medias Querys */
+
 @media screen and (max-width: 770px) {
       #grilla {
         margin: 15% auto auto auto;
@@ -332,6 +418,3 @@ body{
         margin: 25% auto auto auto;
     }
 }
-
-
-
