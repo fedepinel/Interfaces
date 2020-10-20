@@ -353,14 +353,9 @@ body{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: 0.5s;
     font-weight: bold;
 }
   
-#btnSubmit:hover {
-    background-color: #b6b6b6;
-    transition: 0.5s;
-}
 
 #btnSubmit:focus {
     animation: animacionBtn 1s forwards;
