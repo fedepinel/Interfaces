@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="css/estilo.css">
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/evento.js"></script>
-    <script type="text/javascript" src="js/saludos.js"></script>
+    <script type="text/javascript" src="js/loading.js"></script>
 </head>
 
 <body>
     <!-- Barra navegacion -->
-    <div class="barranav" id="navbarNav">
+    <div class="barranav esconder" id="navbarNav">
         <ul>
             <li>
                 <a href="index.html">Home</a>
@@ -41,9 +41,10 @@
         </ul>
     </div>
     <!-- Parallax -->
-    <div class="layer viento"></div>
-    <div class="layer niebla"></div>
-    <div class="containerAcordeon">
+    <div class="layer viento esconder"></div>
+    <div class="layer niebla esconder"></div>
+    <!-- Acordeon -->
+    <div class="containerAcordeon esconder">
         <h2>Proximos eventos</h2>
         <button class="acordeon">Estreno de la remasterizacion pronto!</button>
         <div class="panel">
@@ -86,6 +87,10 @@
             </p>
             <img src="imagenes/miles.jpg" alt="detras de camaras">
         </div>
+    </div>
+    <!-- Loader -->
+    <div class="contenedor-loader">
+        <div id="loader"></div>
     </div>
 </body>
 

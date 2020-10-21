@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="css/estilo.css">
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/evento.js"></script>
-    <script type="text/javascript" src="js/saludos.js"></script>
+    <script type="text/javascript" src="js/loading.js"></script>
 </head>
 
 <body>
     <!-- Barra navegacion -->
-    <div class="barranav" id="navbarNav">
+    <div class="barranav esconder" id="navbarNav">
         <ul>
             <li>
                 <a href="index.html">Home</a>
@@ -42,11 +42,11 @@
     </div>
 
     <!-- Parallax -->
-    <div class="layer viento"></div>
-    <div class="layer niebla"></div>
+    <div class="layer viento esconder"></div>
+    <div class="layer niebla esconder"></div>
 
     <!-- Grilla personajes -->
-    <div id="grilla">
+    <div id="grilla" class="esconder">
         <h1>Personajes</h1>
         <div>
             <a href="#"><img src="imagenes/caracteres/shelby.jpg" alt="shelby"></a>
@@ -66,7 +66,7 @@
     </div>
 
     <!-- Carrusel de escenas destacadas -->
-    <div class="carrusel">
+    <div class="carrusel esconder">
         <h1>Escenas destacadas</h1>
         <div class="slides">
             <div class="numbertext">1 / 5</div>
@@ -100,6 +100,10 @@
 
         <a class="prev">&#10094;</a>
         <a class="next">&#10095;</a>
+    </div>
+    <!-- Loader -->
+    <div class="contenedor-loader">
+        <div id="loader"></div>
     </div>
 </body>
 
