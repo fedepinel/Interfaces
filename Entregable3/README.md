@@ -1,1 +1,0 @@
-Bug de recarga: La pagina tiene un bug que ocurre al recargarla con F5 o control + F5, con el tema de las animaciones de entrada, al utilizar el boton home o el logo para recargar la pagina las animaciones de entrada funcionan correctamente, pero al recargar con el explorador no lo hace, solo hace una animacion el fondo de la pagina 
