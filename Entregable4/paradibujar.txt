@@ -1,0 +1,105 @@
+//Home o pagina de bienvenida://
+
+-Barra de navegacion presente en todas las paginas, tratar de usar material  design en todo, la barra contiene el logo a la izquiera de "Spoiler Five", y a la derecha de Iniciar sesion, planes y about
+
+-Mostrar un fondo con alguna foto que directamente te ofrezca escuchar tu musica favorita y empezar a usar el free trial de 30 dias para llamar la atencion y que se pueda cancelar cuando uno quiera y que una vez al clickearlo te lleve a logear y luego muestre las opciones de pago con los beneficios de cada plan, detallar los beneficios
+
+-Imagen de los 4 planes disponible para la persona, poco vistos, pero que esten ahi, van a aparecer luego en la opcion de pagarlos
+
+-footer con opciones
+
+//Pagina de Log in://
+
+-Misma barra de navegacion (menos la opcion de Log In)
+
+-Formulario de inicio de sesion y registro
+
+-Que la persona pueda elegir logear la cuenta con facebook, twitter o google
+
+//Disponibilidad de planes//
+
+-Misma barra de navegacion.
+
+-Disponibilidad de 4 planes, mostrados en cards horizontales, cada uno con cruces y ticks mostrando beneficios y desventajas, haciendo enfasis en los beneficios
+
+-Hacer enfasis a las ofertas de los planes es decir mientras mayor sea el plan mas barato va a ser en comparacion a los otros y mas ventajas va a tener
+
+-Boton de mas informacion y adquirir en las cards
+
+-footer con opciones
+
+//Pagina de reproductor://
+
+1-Barra vertical a la izquierda que 
+*contiene el icono de mi perfil con una flecha al lado para desplegar opciones
+*contiene 2 opciones que sean de home, explorar
+*separador para mi coleccion que sean mis mix, playlist, albuns, canciones, artistas, podscats
+*lista de playlists y boton para crear nueva playlist, al lado del titulo de playlist una opcion para editar o eliminar platlist
+
+2-Seccion horizontal al lado de la barra vertical
+2.1
+*que sea el home de las 2 opciones de al lado, que tenga opcion de volver y al otro lado que tenga un buscador
+*primera fila que tenga lo destacado, lo mas nuevo
+*segunda fila que tenga mixes recomendados para la persona segun lo que escucha
+*estaciones de radio recomendadas para la persona
+*Mixes segun las votaciones que realiza sobre la musica
+
+2.2
+*Seccion explorar, que le muestre lo destacado a la persona
+*Que se muestre lo mas buscado por la gente
+*Que le muestre musica nueva segun sus preferencias de artistas, canciones etc
+*Que le muestre tipo de musica segun la activdad que este haciendo(en el trabajo, gimnasio, colectivo etc)
+
+3-*Barra horizontal abajo que tenga:
+*En el borde de la barra de arriba iria la barra que se va moviendo de la duracion de la cancion*
+3.1: Izquierda de la barra el logo del album de la cancion, nombre de la cancion, abajo de que album es, y abajo de que playlist o album se esta reproduciendo
+
+*Que los pulgares aparezcan con un circulo  de fondo gris un poco opaco para que incite al usuario de mirarlos y votarlos y al votar que aparezca el pulgar relleno segun las votaciones*
+3.2: Medio, opciones de shufle, cancion anterior, play, cancion siguiente, y quitar cancion, arriba de esto a los costados pulgar abajo(izq), pulgar arriba(derecha)
+
+3.3: Derecha: corazon de favorito, duracion de la cancion, volumen de la misma, logo de playlist, que despliegue un menu vertical a la derecha con las canciones siguientes
+
+
+//Pagina de la cancion en especifico(Ficha o página de un tema, podcast o playlist)//
+
+4.1: Mitad izquierda de la pagina la foto del album en grande, con nombre de cancion album y de que playlist se esta tocando, barra con duracion de cancion, abajo a la izquierda el volumen, en el medio simbolos de play(etc) derecha votacion, abajo de esto informacion del tema(que tenga lo mismo que el reproductor anterior)
+
+4.2 Playlist en el cual se esta reproduciendo la cancion, y abajo playlist recomendados
+
+//Perfil//
+-Se accede del reproductor o al logearse
+
+-Todo tipo de configuraciones disponibles, elegir plan etc.
+
+
+//Algunas justificaciones//
+-En la pagina principal en vez de mostrar todas las opciones y planes de golpes es mejor mostrar directamente lo que el usuario quiere ver, la palabra gratis, y que a partir de eso tenga que elegir los planes y logearse para poder obtener ese mes entero gratis
+
+-Opciones de compartir playlist y canciones escuchadas en el momento en redes sociales para lograr marketing gratis
+
+-En el tema de los planes siempre hacer enfasis y darle importancia a los beneficios, y mostrar cosas opciones que la persona quiera tener, utilizar la frase por tiempo limitado para incitar mas a la compra
+
+En el tema del analisis heuristico
+1(visibilidad del estado del sistema)
+*Siempre se mostrara al usuario lo mas importante de la ventana como la reproduccion abajo, minutos de la cancion y demas datos, al mismo tiempo que en la seccion de planes solo se mostraran los planes disponibles
+
+3(control del usuario)
+*Boton de deshacer al momento de eliminar una playlist o cancion de la misma
+
+5(prevencion de errores)
+*Utilizar esto en el formulario de registro y pago de tarjeta de credito para evitar problemas, que sea claro
+
+6(reconocimiento antes que recuerdo)
+*Facilitar los pasos a seguir en el registro y pago
+
+8(estetica y diseno minimalista)
+*Utilizarlo en todas las paginas para mayor compresion y facilidad de uso
+
+10(ayuda y documentacion)
+-En el tema de ayudar y soporte siempre tratar de ponerse del lado del cliente, brindarle ayudale y soluciones
+
+-Siempre mantener pocas cosas en la pagina 4 o 5 como mucho mas no
+
+-Definir bien los recuadros de cada seccion
+
+-Dar importancia a lo del frente con fondos mas opacos y con menos importancia(login, planes)
