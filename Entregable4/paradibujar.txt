@@ -73,33 +73,56 @@
 
 
 //Algunas justificaciones//
--En la pagina principal en vez de mostrar todas las opciones y planes de golpes es mejor mostrar directamente lo que el usuario quiere ver, la palabra gratis, y que a partir de eso tenga que elegir los planes y logearse para poder obtener ese mes entero gratis
+-En la pagina principal en vez de mostrar todas las opciones y planes de golpe es mejor mostrar directamente lo que el usuario quiere ver, la palabra gratis, y que a partir de eso tenga que elegir los planes y logearse para poder obtener ese mes entero gratis sumado al plan gratis
 
--Opciones de compartir playlist y canciones escuchadas en el momento en redes sociales para lograr marketing gratis
+-Opciones de compartir playlist y canciones escuchadas en el momento en redes sociales, para lograr marketing gratis
 
--En el tema de los planes siempre hacer enfasis y darle importancia a los beneficios, y mostrar cosas opciones que la persona quiera tener, utilizar la frase por tiempo limitado para incitar mas a la compra
+-En el tema de los planes siempre hacer enfasis y darle importancia a los beneficios, y mostrar las opciones que la persona quiera tener
 
 En el tema del analisis heuristico
 1(visibilidad del estado del sistema)
-*Siempre se mostrara al usuario lo mas importante de la ventana como la reproduccion abajo, minutos de la cancion y demas datos, al mismo tiempo que en la seccion de planes solo se mostraran los planes disponibles
+*Siempre se mostrara al usuario lo mas importante de la ventana como la reproduccion abajo, minutos de la cancion y demas datos, 
 
 3(control del usuario)
-*Boton de deshacer al momento de eliminar una playlist o cancion de la misma
+*Boton de deshacer al momento de eliminar una playlist o cancion de la misma, en este caso cuando se aprete el lapiz para editar o eliminar la playlist, cualquier cambio hecho sea eliminar o editar tendra la opcion de deshacer
+
+4(Consitencia y estandares)
+*En la seccion de planes estan los ticks verdes y cruces rojas para llamar la atencion a la hora de ver los beneficios disponibles de cada plan asociando el verde con todas las cosas buenas que tiene el plan y el rojo con las que no
+
+*La barra de navegacion siembre tendra el logo a la izquierda y los botones a la derecha
 
 5(prevencion de errores)
 *Utilizar esto en el formulario de registro y pago de tarjeta de credito para evitar problemas, que sea claro
 
 6(reconocimiento antes que recuerdo)
-*Facilitar los pasos a seguir en el registro y pago
+*Facilitar los pasos a seguir en el registro y pago de planes
 
 8(estetica y diseno minimalista)
 *Utilizarlo en todas las paginas para mayor compresion y facilidad de uso
 
-10(ayuda y documentacion)
--En el tema de ayudar y soporte siempre tratar de ponerse del lado del cliente, brindarle ayudale y soluciones
+9(Ayudar a los usuarios a reconocer)
+*Indicar en los registros cuando se cometan errores
 
--Siempre mantener pocas cosas en la pagina 4 o 5 como mucho mas no
+10(ayuda y documentacion)
+*En el tema de ayudar y soporte siempre tratar de ponerse del lado del cliente, brindarle ayudale y soluciones
+
+-Disenio simple y con pocas cosas para que no cueste usarlo y no tener que recordar cada cosa
+
+-Pocas cosas en la pagina 4 o 5 como mucho mas no
 
 -Definir bien los recuadros de cada seccion
 
+-Disenio de pagina basado lo maximo posible en el sistema 1 para tratar de mantener armonia en todas las pagina por ende el usuario no debe pensar tanto, lo que ve es todo lo que hay y sabe reconocerlo
+
+*Gestalt*
+
+-Mostrar un poco el siguiente elemento para indicar que si scrollea se encuentran mas elenmentos en la pantalla
+
+-Las secciones como la barra lateral y la de reproduccion de abajo en el modo desktop tienen otro color a las secciones inicio, explorar y playlist para diferenciarlos, al igual que los espacios y el orden de los elementos
+
 -Dar importancia a lo del frente con fondos mas opacos y con menos importancia(login, planes)
+
+-Simetria en los elementos de la pagina, todo ordenado
+
+-Se utilizo algo del atomic design para mayor facilidad, en este caso barras de navegacion, footer, secciones etc
+
