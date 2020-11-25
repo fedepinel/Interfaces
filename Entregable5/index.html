@@ -20,34 +20,153 @@
 
 <body>
     <!-- Barra de navegacion -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg fondo-barra fixed-top">
         <div class="container-fluid">
+            <div id="logo-barra-nav"></div>
             <div>
-                
+                <a class="navbar-brand logo-titulo" href="index.html">
+                    <span class="ml-3">Spoiler Five</span></a>
             </div>
-            <a class="navbar-brand logoTitulo" href="index.html"><img src="imagenes/logo.png" alt="Logo Spoiler Five" id="logoBarraNav"><span class="ml-3">Spoiler Five</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div class="collapse navbar-collapse botones-nav" id="botonera">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Log In</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Planes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#">Ayuda</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- Introduccion a servicio -->
+    <section class="container-fluid introduccion">
+        <div class="texto-introduccion">
+            <h1>Toda tu musica favorita.</h1>
+            <h1>Con la mejor calidad.</h1>
+            <button type="button" class="btn btn-prueba">COMIENZA PRUEBA GRATUITA</button>
+            <p>30 dias gratis.</p>
+            <p>Cancela cuando quieras.</p>
+        </div>
+        <div class="imagen-discos">
+            <img src="css/imagenes/albuneshome.png" alt="">
+        </div>
+    </section>
+    <!-- Planes -->
+    <section class="pricing py-5 ofertas">
+        <h1>Planes Disponibles</h1>
+        <div class="container-fluid">
+            <div class="contenedor-planes row">
+                <!-- Plan Gratis -->
+                <div class="tarjeta col-lg-3">
+                    <div class="tarjeta card mb-5 mb-lg-0">
+                        <div class="tarjeta card-body">
+                            <div class="encabezado">
+                                <h3 class="card-title text-center">Plan Gratis</h3>
+                                <h3 class="card-price text-center">$0,00</h3>
+                                <p class="period">/mes</p>
+                            </div>
+                            <div class="elementos-precios">
+                                <ul>
+                                    <li class="item-beneficio"><img src="css/imagenes/logos/tick.png" alt="Tick">60 millones de canciones.</li>
+                                    <li class="item-desventaja"><img src="css/imagenes/logos/cruz.png" alt="Cruz">Sin Publicidad</li>
+                                    <li class="item-desventaja"><img src="css/imagenes/logos/cruz.png" alt="Cruz">Crear Playlists</li>
+                                    <li class="item-desventaja"><img src="css/imagenes/logos/cruz.png" alt="Cruz">Salteo de Cancion Ilimitado</li>
+                                    <li class="item-desventaja"><img src="css/imagenes/logos/cruz.png" alt="Cruz">Sonido en Alta Calidad</li>
+                                    <li class="item-desventaja"><img src="css/imagenes/logos/cruz.png" alt="Cruz">6 Cuentas Disponibles</li>
+                                </ul>
+                                <a href="#" class="btn btn-block">Log In</a>
+                                <p>Mas informacion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Plan Basico -->
+                <div class="tarjeta col-lg-3">
+                    <div class="tarjeta card mb-5 mb-lg-0">
+                        <div class="tarjeta card-body">
+                            <div class="encabezado">
+                                <h3 class="card-title text-center">Plan Basico</h3>
+                                <h3 class="card-price text-center">$80,00</h3>
+                                <p class="period">/mes</p>
+                            </div>
+                            <div class="elementos-precios">
+                                <ul>
+                                    <li class="item-beneficio"><img src="css/imagenes/logos/tick.png" alt="Tick">60 millones de canciones.</li>
+                                    <li class="item-beneficio"><img src="css/imagenes/logos/tick.png" alt="Tick">Sin Publicidad</li>
+                                    <li class="item-beneficio"><img src="css/imagenes/logos/tick.png" alt="Tick">Crear Playlists</li>
+                                    <li class="item-desventaja"><img src="css/imagenes/logos/cruz.png" alt="Cruz">Salteo de Cancion Ilimitado</li>
+                                    <li class="item-desventaja"><img src="css/imagenes/logos/cruz.png" alt="Cruz">Sonido en Alta Calidad</li>
+                                    <li class="item-desventaja"><img src="css/imagenes/logos/cruz.png" alt="Cruz">6 Cuentas Disponibles</li>
+                                </ul>
+                                <a href="#" class="btn btn-block">Probar ahora</a>
+                                <p>Mas informacion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Plan Premium -->
+                <div class="tarjeta col-lg-3">
+                    <div class="tarjeta card mb-5 mb-lg-0">
+                        <div class="tarjeta card-body">
+                            <div class="encabezado">
+                                <h3 class="card-title text-center">Plan Premium</h3>
+                                <h3 class="card-price text-center">$120,00</h3>
+                                <p class="period">/mes</p>
+                            </div>
+                            <div class="elementos-precios">
+                                <ul>
+                                    <li class="item-beneficio"><img src="css/imagenes/logos/tick.png" alt="Tick">60 millones de canciones.</li>
+                                    <li class="item-beneficio"><img src="css/imagenes/logos/tick.png" alt="Tick">Sin Publicidad</li>
+                                    <li class="item-beneficio"><img src="css/imagenes/logos/tick.png" alt="Tick">Crear Playlists</li>
+                                    <li class="item-beneficio"><img src="css/imagenes/logos/tick.png" alt="Tick">Salteo de Cancion Ilimitado</li>
+                                    <li class="item-beneficio"><img src="css/imagenes/logos/tick.png" alt="Tick">Sonido en Alta Calidad</li>
+                                    <li class="item-desventaja"><img src="css/imagenes/logos/cruz.png" alt="Cruz">6 Cuentas Disponibles</li>
+                                </ul>
+                                <a href="#" class="btn btn-block">Probar ahora</a>
+                                <p>Mas informacion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Plan Familiar -->
+                <div class="tarjeta col-lg-3">
+                    <div class="tarjeta card mb-5 mb-lg-0">
+                        <div class="tarjeta card-body">
+                            <div class="encabezado">
+                                <h3 class="card-title text-center">Plan Familiar</h3>
+                                <h3 class="card-price text-center">$180,00</h3>
+                                <p class="period">/mes</p>
+                            </div>
+                            <div class="elementos-precios">
+                                <ul>
+                                    <li class="item-beneficio"><img src="css/imagenes/logos/tick.png" alt="Tick">60 millones de canciones.</li>
+                                    <li class="item-beneficio"><img src="css/imagenes/logos/tick.png" alt="Tick">Sin Publicidad</li>
+                                    <li class="item-beneficio"><img src="css/imagenes/logos/tick.png" alt="Tick">Crear Playlists</li>
+                                    <li class="item-beneficio"><img src="css/imagenes/logos/tick.png" alt="Tick">Salteo de Cancion Ilimitado</li>
+                                    <li class="item-beneficio"><img src="css/imagenes/logos/tick.png" alt="Tick">Sonido en Alta Calidad</li>
+                                    <li class="item-beneficio"><img src="css/imagenes/logos/tick.png" alt="Tick">6 Cuentas Disponibles</li>
+                                </ul>
+                                <a href="#" class="btn btn-block">Probar ahora</a>
+                                <p>Mas informacion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <img src="imagenes/footer.jpg" alt="Footer">
+    </footer>
 </body>
 
 </html>
