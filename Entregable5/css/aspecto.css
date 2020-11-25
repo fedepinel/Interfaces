@@ -1,0 +1,13 @@
+/* Logo Barra Nav */
+.logoTitulo{
+    font-family: Ramabhadra;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 91px;   
+}
+
+#logoBarraNav{
+    width: 130px;
+    height: 87px;
+}
