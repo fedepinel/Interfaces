@@ -48,40 +48,28 @@
     </nav>
     <!-- Log in -->
     <section class="container-fluid introduccion">
-        <div class="container">
-            <div class="row">
-              <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-                <div class="card card-signin my-5">
-                  <div class="card-body">
-                    <h5 class="card-title text-center">Log In</h5>
-                    <form class="form-signin">
-                      <div class="form-label-group">
-                          <p>Usuario</p>
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                      </div>     
-                      <div class="form-label-group">
-                          <p>Contraseña</p>
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                      </div>       
-                      <div class="custom-control custom-checkbox mb-3">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Remember password</label>
-                      </div>
-                      <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
-                      <hr class="my-4">
-                      <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
-                      <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
-                    </form>
-                  </div>
+        <h1 class="titulo-login">Log In</h1>
+        <div class="login">
+            <form action="/action_page.php" method="post">
+                <div class="container">
+                  <label for="uname">Usuario</label>
+                  <input type="text" placeholder="E-mail o username" name="uname" required>
+
+                  <label for="psw">Contraseña</label>
+                  <input type="password" placeholder="Contraseña" name="psw" required>
+                      
+                  <a href="homeReproductor.html" class="btn btn-login">Log In</a> 
+                  <p>O ingresar con</p>
+                  <button class="btn btn-facebook" type="submit"><img src="css/imagenes/redes/fb.png" alt="Logo Facebook"><span>Facebook</span></button>
+                  <button class="btn btn-google" type="submit"><img src="css/imagenes/redes/google.png" alt="Logo Google"><span>Google</span></button>
+                  <p>Aun no tienes una cuenta? Registrarse</p>
                 </div>
-              </div>
-            </div>
-          </div>
+              </form>
+        </div>
     </section>
     <!-- Footer -->
     <footer>
         <img src="imagenes/footernegro.jpg" alt="Footer">
     </footer>
 </body>
-
 </html>

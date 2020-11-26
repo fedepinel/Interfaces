@@ -230,7 +230,7 @@ hr{
 /* Seccion */
 .introduccion{
     position: relative;
-    background-image: url("../css/imagenes/background.jpg");
+    background-image: url("../css/imagenes/background1.jpg");
     background-size: cover;
     height: 80%;
     margin-top: 6%;
@@ -352,65 +352,77 @@ footer img{
 }
 
 /* Log in */
-.card-signin {
-    border: 0;
-    border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0);
+.login{
+    border-left: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+    display: block;
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 0 5%;
 }
-  
-.card-signin .card-title {
-    margin-bottom: 2rem;
-    font-weight: 300;
-    font-size: 1.5rem;
-}
-  
-.card-signin .card-body {
-    padding: 2rem;
-}
-  
-.form-signin {
-    width: 100%;
-}
-  
-.form-signin .btn {
-    font-size: 80%;
-    border-radius: 5rem;
-    letter-spacing: .1rem;
-    font-weight: bold;
-    padding: 1rem;
-    transition: all 0.2s;
-}
-  
-.form-label-group {
-    position: relative;
-    margin-bottom: 1rem;
-}
-  
-.form-label-group input {
-    height: auto;
-    border-radius: 2rem;
+
+.titulo-login{
+    color: white;
+    text-align: center;
 } 
- 
-.form-label-group input:not(:placeholder-shown) {
-    padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
-    padding-bottom: calc(var(--input-padding-y) / 3);
+
+.login input{
+    width: 100%;
+    height: 60px;
+    border-radius: 7px;
+    border: solid #BBBBBB;  
+}  
+
+.login label{
+    font-size: 25px;
+    margin-top: 5%;
+} 
+
+.login p{
+    text-align: center;
+    margin: 3%;
 }
-  
-.form-label-group input:not(:placeholder-shown)~label {
-    padding-top: calc(var(--input-padding-y) / 3);
-    padding-bottom: calc(var(--input-padding-y) / 3);
-    font-size: 12px;
-    color: #777;
-}
-  
-.btn-google {
+
+.btn-login{
+    margin: 8% 0 2% 0;
+    width: 100%;
+    background-color: #F7A325;
+    border: 2px solid white;
     color: white;
-    background-color: #ea4335;
+    border-radius: 15px;
+    padding: 2.5%;
 }
-  
-.btn-facebook {
+
+.btn-facebook, .btn-google{
+    display: inline-block;
+    width: 100%;
+    background-color: #BBBBBB;
+    border: 2px solid white;
     color: white;
-    background-color: #3b5998;
+    border-radius: 15px;
+    padding: 2%;
+    margin: 2% 0;
 }
+
+.btn-facebook img{
+    width: 5%;
+}
+
+.btn-google img{
+    width: 5%;
+}
+
+.btn-google span{
+    width: 5%;
+}
+
+
+
+
+
+
+
+
   
