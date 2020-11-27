@@ -537,6 +537,65 @@ footer img{
 }
 /* Footer */
 
+/* Reproductor Grande */
+.reproductor-grande{
+    background-color: #323232;
+    color: white;
+    padding: 3%;
+}
+
+.flecha-volver{
+    width: 50px;
+    transform: rotate(180deg);   
+}
+
+.titulo-votacion{
+    margin-top: 2%;
+    display: flex;
+}
+
+.votacion-megusta{
+    margin-left: 15%;
+}
+
+.votacion-megusta .estrella-reproductor{
+    padding-left: 5%;
+}
+
+
+.contenedor-cancion img{
+    width: 450px;
+    border-radius: 20px;
+}
+
+.contenedor-cancion .corazon-reproductor, .contenedor-cancion .estrella-reproductor{
+    width: 40px;
+}
+
+#duracion{
+    width: 70%;
+}
+
+.volumen-reproductor img{
+    width: 4%;
+}
+
+.datos-cancion img{
+    width: 12%;
+}
+
+.letra-cancion img{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.cancion .mockup-reproductor{
+    width: 50%;
+}
+
+
+
+/* Reproductor Grande */
 
 /* Media Querys */
 @media only screen and (max-width: 600px) {
