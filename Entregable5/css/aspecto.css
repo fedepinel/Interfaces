@@ -773,6 +773,34 @@ footer img{
 
     /* Registrarse */
     
+    /* Reproductor datos mobile */
+    .datos-mobile{
+        text-align: center;
+    }
+
+    .datos-cancion-mobile p{
+        text-align: left;
+    }
+
+    .datos-cancion-mobile img{
+        width: auto;
+        height: 30px;
+    }
+
+    .reproductor-datos{
+        background-color: #323232;
+        color: #DFDFDF;
+    }
+
+    .reproductor-datos hr{
+        width: 100%;
+    }
+
+    .reproductor-datos .flecha-volver{
+        width: 30px;
+    }
+    /* Reproductor datos mobile */
+
 }
 
 
