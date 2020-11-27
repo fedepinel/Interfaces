@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse botones-nav" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="login.html">Log In</a>
+                        <a class="nav-link" href="login.html">Log In</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Planes</a>
@@ -44,25 +44,39 @@
 
         </div>
       </nav>
-    <!-- Log in -->
-    <section class="container-fluid introduccion-login">
-        <h1 class="titulo-login">Log In</h1>
-        <div class="login">
+    <!-- Registro -->
+    <section class="container-fluid introduccion-registro">
+        <h1 class="titulo-registro">Registrarse</h1>
+        <div class="registro">
             <form action="/action_page.php" method="post">
                 <div class="container">
-                  <label for="uname">Usuario</label>
-                  <input type="text" placeholder="E-mail o username" name="uname" required>
+                    <label for="email">Correo electronico</label>
+                    <input type="text" placeholder="E-mail" name="email" required>
 
-                  <label for="psw">Contraseña</label>
-                  <input type="password" placeholder="Contraseña" name="psw" required>
-                      
-                  <a href="homeReproductor.html" class="btn btn-login">Log In</a> 
-                  <p>O ingresar con</p>
-                  <button class="btn btn-facebook" type="submit"><img src="css/imagenes/redes/fb.png" alt="Logo Facebook"><span>Facebook</span></button>
-                  <button class="btn btn-google" type="submit"><img src="css/imagenes/redes/google.png" alt="Logo Google"><span>Google</span></button>
-                  <p>Aun no tienes una cuenta?<a href="registro.html"> Registrarse</a></p>
+                    <label for="user">Nombre de usuario</label>
+                    <input type="text" placeholder="Usuario" name="user" required>
+
+                    <label for="psw1">Contraseña</label>
+                    <input type="password" placeholder="Contraseña" name="psw1" required>
+
+                    <label for="psw2">Repetir Contraseña</label>
+                    <input type="password" placeholder="Contraseña" name="psw2" required>
+                    
+                    
+                    <div class="input-menores">
+                        <div class="genero"> 
+                            <label for="genero">Sexo</label>
+                            <input class="input-menor" type="text" placeholder="Sexo" name="genero" required>
+                        </div>
+                        <div class="edad"> 
+                            <label for="Edad">Edad</label>
+                            <input class="input-menor" type="text" placeholder="Edad" name="Edad" required>
+                        </div>
+                    </div>
+
+                    <a href="homeReproductor.html" class="btn btn-login">Registrarse</a>
                 </div>
-              </form>
+            </form>
         </div>
     </section>
     <!-- Footer -->
@@ -71,4 +85,5 @@
         <img class="footer-mobile-dark" src="imagenes/footermobilenegro.jpg" alt="Footer Mobile Dark">
     </footer>
 </body>
+
 </html>
