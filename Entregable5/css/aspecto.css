@@ -3,8 +3,9 @@
 }
 /* Barra nav */
 /* Fondo Barra nav */
-.fondo-barra{
+#fondo-barra{
     background-color: #121212;  
+    padding: 1%;
 }
 
 /* Logo Barra Nav */
@@ -14,7 +15,18 @@
     font-weight: normal;
     font-size: 48px;
     line-height: 91px;
-    color: #DFDFDF; 
+    color: #DFDFDF;
+}
+
+.logo-barra, .logo-barra:hover{
+    text-decoration: none;
+    font-size: 40px;
+    color: #DFDFDF;
+}
+
+#logo{
+    padding-right: 5%;
+    width: 130px;
 }
 
 #logo-barra-nav{
@@ -116,8 +128,6 @@ section article img{
     color: #FFFFFF;
     padding-left: 31px;
     padding-bottom: 16px;
-
-
 }
 
 hr{
@@ -259,27 +269,14 @@ hr{
   
 
 }
-
-/* Elementos Barra Nav */
-#botonera ul li a{
-    font-family: Ramabhadra;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 57px;
-    text-align: center;
-    color: #DFDFDF;
-    padding: 0 35px;
-}
-/* Barra nav */
+/* Reproductor */
 
 /* Seccion */
 .introduccion{
     position: relative;
-    background-image: url("../css/imagenes/background.jpg");
+    background-image: url("../css/imagenes/background1.jpg");
     background-size: cover;
     height: 80%;
-    margin-top: 6%;
     padding: 5%;
 }
 
@@ -290,8 +287,11 @@ hr{
     text-align: center;
     color: white;
 }
-
 .texto-introduccion h1{
+    display: none;
+}
+
+.texto-introduccion h2{
     padding-top: 5%;
     font-size: 40px;
 }
@@ -318,7 +318,7 @@ hr{
 .imagen-discos{
     position: absolute;
     display: inline-block;
-    margin: 1% 12%;
+    margin: 1% 5%;
 }
 /* Seccion */
 
@@ -335,13 +335,15 @@ hr{
     margin: 3%
 }
 
-.tarjeta{
+.tarjeta, .tarjeta-dividida, .tarjeta-ubicacion{
     padding: 0;
-    width: 400px;
+    width: 380px;
     height: 600px;
     border-radius: 16px;
     font-weight: bold;
 }
+
+
 
 .tarjeta .btn{
     border: solid black 1px;
@@ -349,7 +351,7 @@ hr{
     color: white;
     width: 50%;
     text-align: center;
-    margin-left: 50%;
+    margin: 5% 0 0 50%;
     transform: translateX(-50%);
 }
 
@@ -388,8 +390,9 @@ hr{
 
 .item-desventaja img{
     margin-right: 3%;
-    width: 31px;
+    width: 27px;
 }
+/* Planes */
 
 /* Footer */
 footer img{
