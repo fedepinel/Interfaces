@@ -86,19 +86,17 @@
                 <h1>Busqueda</h1>
 
             </div>
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Buscar" aria-label="Recipient's username"
-                    aria-describedby="button-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img
-                            src="css/imagenes/logos/lupa.png" alt="" style="width: 20px;"></button>
+            <div class="input-group mb-3 j">
+                <input type="text" class="form-control" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div >
+                    <a class="btn btn-outline-secondary" href="busqueda.html" id="button-addon2"><img src="css/imagenes/logos/lupa.png" alt="" style="width: 20px;"></a>
                 </div>
-            </div>
+              </div>
         </section>
         <p>Resultados de busqueda para: Red Hot Chili Peppers </p>
 
         <section class="filtros">
-            <p>Todo</p>
+            <p class="active">Todo</p>
             <p>Canciones</p>
             <p>Albunes</p>
             <p>Artistas</p>
@@ -248,19 +246,22 @@
         </article>
         <div class="contenedor">
             <section class="cancion-reproduciendo">
-                <article>
-                    <img id="expandir2" src="css/imagenes/logos/flecha.png" alt="">
-                </article>
-                <article>
-                    <img src="imagenes/albunes/lz4.jpg" alt="">
+              
+                <img id="expandir" src="css/imagenes/logos/flecha.png" alt="">
+           
+            <article>
+                <img id="expandir2" src="css/imagenes/logos/flecha.png" alt="">
+            </article>
+            <article>
+                <img src="imagenes/albunes/lz4.jpg" alt="">
 
-                </article>
-                <article>
-                    <p id="titulo-cancion">Stairway to heaven</p>
-                    <p>Led Zeppelin IV</p>
-                    <p>Led Zeppelin </p>
-                </article>
-            </section>
+            </article>
+            <article>
+                <p id="titulo-cancion">Stairway to heaven</p>
+                <p>Led Zeppelin IV</p>
+                <p>Led Zeppelin </p>
+            </article>
+        </section>
             <section class="acciones">
                 <article>
                     <img src="css/imagenes/logosReproductor/corazon.png" alt="">
@@ -293,9 +294,7 @@
                 <article>
                     <input id="volumen" type="range" id="vol" name="vol" min="0" max="50">
                 </article>
-                <article>
-                    <img id="expandir" src="css/imagenes/logos/flecha.png" alt="">
-                </article>
+               
             </section>
 
         </div>
