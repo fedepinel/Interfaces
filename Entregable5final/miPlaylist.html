@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoiler Five</title>
+    <link rel="icon" href="imagenes/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/aspecto.css">
+    <link href='https://fonts.googleapis.com/css?family=Ramabhadra' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+    <!-- barra nav -->
+
+    <aside class="menu">
+        <section class="user">
+            <img class="imagen-perfil" src="css/imagenes/redes/perfil.jpg" alt="imagen perfil">
+            <p>Username</p>
+            <img class="menu-user" src="css/imagenes/logos/3puntos.png" alt="menu user">
+            <hr>
+        </section>
+        <section class="inicio-menu">
+            <a href="homeReproductor.html"><p>Inicio</p></a>
+            <p>Explorar</p>
+        </section>
+        <section class="mi-coleccion">
+            <p>Mi coleccion
+                <hr>
+            </p>
+
+            <article>
+                <img src="css/imagenes/logos/cancion.png" alt="">
+                <p>Canciones</p>
+            </article>
+            <article>
+                <img src="css/imagenes/logos/album.png" alt="">
+                <p>Albunes</p>
+            </article>
+            <article>
+                <img src="css/imagenes/logos/artista.png" alt="">
+                <p>Artistas</p>
+            </article>
+            <article>
+                <img src="css/imagenes/logos/podcast.png" alt="">
+                <p>Podcast</p>
+            </article>
+            <article>
+                <img src="css/imagenes/logos/playlistAmarillo.png" alt="">
+                <a href="playlist.html"><p class="active">Playlist</p></a>
+            </article>
+
+        </section>
+
+    </aside>
+
+    
+    <div id="popvoto" class="d-none">
+        <h2>Dejanos tu puntaje</h2>
+        <ul class="ratings">
+            <li class="star"></li>
+            <li class="star"></li>
+            <li class="star"></li>
+            <li class="star"></li>
+            <li class="star"></li>
+          </ul>
+        <button  id="voto" type="button" class="btn btn-warning">Votar</button>
+    </div>
+
+    <!-- barra nav  cel-->
+    <section class="nav-cel-top">
+        <article>
+            <img src="css/imagenes/redes/perfil.jpg" alt="">
+        </article>
+        <article>
+            <p>Username</p>
+        </article>
+        <article id="dropdown-user">
+            <span>&#9776</span>
+        </article>
+    </section>
+    <aside id="drop-content" class="dropdown-user-menu d-none">
+        <a href="">Salir del reproductor</a>
+        <a href="">Configuraciones</a>
+        <a href="">Planes</a>
+        <a href="">Desconectarse</a>
+    </aside>
+    <section class="inicio pt-5">
+        
+        <section id="titulo-contenido">
+            <div>
+                <h1>Informacion Playlist</h1>
+
+            </div>
+            <div class="input-group mb-3 j">
+                <input type="text" id="buscar-input" class="form-control" placeholder="Buscar" aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <a class="btn btn-outline-secondary" href="busqueda.html" id="button-addon2"><img src="css/imagenes/logos/lupa.png" alt="" style="width: 20px;"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="detalle">
+            <img id="img-playlist" src="imagenes/albunes/mixes/mixes3.png" alt="">
+            <article>
+                <h2>Playlist </h2>
+                <p>Playlist creada por: usuario</p>
+                <img id="estrellas-playlist" src="imagenes/cuatroEstrellas.jpg" alt="">
+                <article class="botones">
+                   <img src="imagenes/play.png" alt="">
+                   <img src="imagenes/shuffleCancion.png" alt="" style="margin-top: 0;">
+                   <img src="imagenes/compartir copy.png" alt="">
+                   <img src="imagenes/estrella.png" alt="">
+                   <img src="imagenes/trespuntos.png" alt="">
+                </article>
+
+               
+            </article>
+        </section>
+        <section>
+
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Artista</th>
+                    <th scope="col">Album</th>
+                    <th scope="col">Duracion</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td ><img class="img-play" src="css/imagenes/logosReproductor/logoPlay.png" alt="" style="width: 20px; height: auto;"></td>
+                    <td>Cancion 1</td>
+                    <td>Artista 1</td>
+                    <td>Album 1</td>
+                    <td>4:37</td>
+                    <td> <img src="imagenes/d365c5ea-61fd-4bda-8315-8ad6ca2b9eda.jpg" alt="" style="width: 100px;"></td>
+                  </tr>
+                  <tr>
+                    <td ><img class="img-play" src="css/imagenes/logosReproductor/logoPlay.png" alt="" style="width: 20px; height: auto;"></td>
+                    <td class="pr">Cancion 2</td>
+                    <td>Artista 2</td>
+                    <td>Album 2</td>
+                    <td>2:90</td>
+                    <td> <img class="img-play" src="imagenes/d365c5ea-61fd-4bda-8315-8ad6ca2b9eda.jpg" alt="" style="width: 100px;"></td>
+                  </tr>
+                  <tr>
+                    <td ><img class="img-play" src="css/imagenes/logosReproductor/logoPlay.png" alt="" style="width: 20px; height: auto;"></td>      <td>Cancion 3</td>
+                    <td>Artista 3</td>
+                    <td>Album 3</td>
+                    <td>4:37</td>
+                    <td> <img class="img-play" src="imagenes/d365c5ea-61fd-4bda-8315-8ad6ca2b9eda.jpg" alt="" style="width: 100px;"></td>
+                  </tr>
+                  <tr>
+                    <td ><img class="img-play" src="css/imagenes/logosReproductor/logoPlay.png" alt="" style="width: 20px; height: auto;"></td>
+                    <td>Cancion 1</td>
+                    <td>Artista 1</td>
+                    <td>Album 1</td>
+                    <td>4:37</td>
+                    <td> <img src="imagenes/d365c5ea-61fd-4bda-8315-8ad6ca2b9eda.jpg" alt="" style="width: 100px;"></td>
+                  </tr>
+                  <tr>
+                    <td ><img class="img-play" src="css/imagenes/logosReproductor/logoPlay.png" alt="" style="width: 20px; height: auto;"></td>
+                    <td>Cancion 2</td>
+                    <td>Artista 2</td>
+                    <td>Album 2</td>
+                    <td>2:90</td>
+                    <td> <img class="img-play" src="imagenes/d365c5ea-61fd-4bda-8315-8ad6ca2b9eda.jpg" alt="" style="width: 100px;"></td>
+                  </tr>
+                  <tr>
+                    <td ><img class="img-play" src="css/imagenes/logosReproductor/logoPlay.png" alt="" style="width: 20px; height: auto;"></td>
+                    <td>Cancion 3</td>
+                    <td>Artista 3</td>
+                    <td>Album 3</td>
+                    <td>4:37</td>
+                    <td> <img class="img-play" src="imagenes/d365c5ea-61fd-4bda-8315-8ad6ca2b9eda.jpg" alt="" style="width: 100px;"></td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+
+
+              <table class="table table-hover t2 mt-4" style="width: 200px;"> 
+           
+                <thead>
+                  <tr>
+                   
+                    <th scope="col">Titulo</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                 
+                    <td>Cancion </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    
+                    <td></td>
+                    <td></td>
+                    <td> <img src="imagenes/logosTM.jpg" alt="" style="width: 60px;"></td>
+                  </tr>
+                  <tr>
+                    <td >Cancion </td>
+                    <td></td>
+                    <td></td>
+                    
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                
+                    <td> <img src="imagenes/logosTM.jpg" alt="" style="width: 60px;"></td>
+                  </tr>
+                  <tr>
+                    
+                    <td>Cancion </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td> <img src="imagenes/logosTM.jpg" alt="" style="width: 60px;"></td>
+                  </tr>
+                  <tr>
+                 
+                    <td>Cancion </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td> <img src="imagenes/logosTM.jpg" alt="" style="width: 60px;"></td>
+                  </tr>
+                  <tr>
+                    
+                    <td>Cancion </td>
+                    <td></td>
+                    <td></td>    
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                    <td> <img src="imagenes/logosTM.jpg" alt="" style="width: 60px;"></td>
+                  </tr>
+                  <tr>
+                  
+                    <td>Cancion </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                
+                    <td> <img src="imagenes/logosTM.jpg" alt="" style="width: 60px;"></td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+
+
+        </section>
+        <h2 class="mt-4">Votacioens Recientes</h2>
+        <section class="votosRecientes2">
+            <article>
+                <img src="css/imagenes/redes/perfil.jpg" alt="">
+                <p>Pedro    Alberto </p>
+                <img src="imagenes/cuatroEstrellas.jpg" alt="">
+            </article>
+            <article>
+                <img src="css/imagenes/redes/perfil.jpg" alt="">
+                <p>Jose   Perez</p>
+                <img src="imagenes/cuatroEstrellas.jpg" alt="">
+            </article>
+
+            <article>
+                <img src="css/imagenes/redes/perfil.jpg" alt="">
+                <p>Carlos    Glfredo</p>
+                <img src="imagenes/cuatroEstrellas.jpg" alt="">
+            </article>
+
+            <article>
+                <img src="css/imagenes/redes/perfil.jpg" alt="">
+                <p>Fabri    Gomez</p>
+                <img src="imagenes/cuatroEstrellas.jpg" alt="">
+            </article>
+
+            <article>
+                <img src="css/imagenes/redes/perfil.jpg" alt="">
+                <p>Jose    Alfredo</p>
+                <img src="imagenes/cuatroEstrellas.jpg" alt="">
+            </article>
+
+            <article>
+                <img src="css/imagenes/redes/perfil.jpg" alt="">
+                <p>Carlo    Jose</p>
+                <img src="imagenes/cuatroEstrellas.jpg" alt="">
+            </article>
+            <article>
+                <img src="css/imagenes/redes/perfil.jpg" alt="">
+                <p>Carlos   Glfredo</p>
+                <img src="imagenes/cuatroEstrellas.jpg" alt="">
+            </article>
+
+            <article>
+                <img src="css/imagenes/redes/perfil.jpg" alt="">
+                <p>Fabri Gomez</p>
+                <img src="imagenes/cuatroEstrellas.jpg" alt="">
+            </article>
+
+            <article>
+                <img src="css/imagenes/redes/perfil.jpg" alt="">
+                <p>Federico Perez</p>
+                <img src="imagenes/cuatroEstrellas.jpg" alt="">
+            </article>
+           
+        </section>
+
+
+    </section>
+  
+
+
+
+
+
+
+    <section class="reproductor">
+        <article id="duracion">
+            <p>0:00</p>
+            <input type="range" id="vol" name="vol" min="0" max="50">
+            <p>3:43</p>
+        </article>
+        <div class="contenedor">
+            <section class="cancion-reproduciendo">
+              
+                <img id="expandir" src="css/imagenes/logos/flecha.png" alt="">
+           
+            <article>
+                <img id="expandir2" src="css/imagenes/logos/flecha.png" alt="">
+            </article>
+            <article>
+                <img src="imagenes/albunes/lz4.jpg" alt="">
+
+            </article>
+            <article>
+                <p id="titulo-cancion">Stairway to heaven</p>
+                <p>Led Zeppelin IV</p>
+                <p>Led Zeppelin </p>
+            </article>
+        </section>
+            <section class="acciones">
+                <article>
+                    <img src="css/imagenes/logosReproductor/corazon.png" alt="">
+                </article>
+                <article>
+                    <img id="estrella" src="css/imagenes/logosReproductor/estrella.png" alt="">
+                </article>
+            </section>
+            <section class="botones-reproductor">
+                <article>
+                    <img class="shuffle" src="css/imagenes/logosReproductor/shuffle.png" alt="">
+                </article>
+                <article>
+                    <img class="secundario" src="css/imagenes/logosReproductor/logoAtras.png" alt="">
+                </article>
+                <article>
+                    <img class="principal" src="css/imagenes/logosReproductor/logoPlay.png" alt="">
+                </article>
+                <article>
+                    <img class="secundario" src="css/imagenes/logosReproductor/logoSiguiente.png" alt="">
+                </article>
+                <article>
+                    <img class="secundario" src="css/imagenes/logosReproductor/repeat.png" alt="">
+                </article>
+            </section>
+            <section class="config">
+                <article>
+                    <img src="css/imagenes/logosReproductor/volumen.png" alt="">
+                </article>
+                <article>
+                    <input id="volumen" type="range" id="vol" name="vol" min="0" max="50">
+                </article>
+               
+            </section>
+
+        </div>
+
+    </section>
+    <section class="nav-celu">
+        <article>
+            <img src="css/imagenes/logos/homeAmarillo.png">
+            <p class="active">Home</p>
+        </article>
+        <article>
+            <img src="css/imagenes/logos/lupa.png" alt="">
+            <p>Buscar</p>
+        </article>
+        <article>
+            <img src="css/imagenes/logos/explorar.png" alt="">
+            <p>Explorar</p>
+        </article>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoiler Five</title>
+    <link rel="icon" href="imagenes/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/aspecto.css">
+    <link href='https://fonts.googleapis.com/css?family=Ramabhadra' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="fondo-barra">
+        <div class="container-fluid">
+            <a class="redirec-nav navbar-brand logo-barra" href="index.html">
+                <img src="imagenes/logo.png" id="logo" alt="Logo Spoiler Five"><span>Spoiler Five</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>     
+            <div class="collapse navbar-collapse botones-nav" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Planes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ayuda</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+      </nav>
+    <!-- Registro -->
+    <section class="container-fluid introduccion-registro">
+        <h1 class="titulo-registro">Registrarse</h1>
+        <div class="registro">
+            <form action="/action_page.php" method="post">
+                <div class="container">
+                    <label for="email">Correo electronico</label>
+                    <input type="text" placeholder="E-mail" name="email" required>
+
+                    <label for="user">Nombre de usuario</label>
+                    <input type="text" placeholder="Usuario" name="user" required>
+
+                    <label for="psw1">Contraseña</label>
+                    <input type="password" placeholder="Contraseña" name="psw1" required>
+
+                    <label for="psw2">Repetir Contraseña</label>
+                    <input type="password" placeholder="Contraseña" name="psw2" required>
+                    
+                    
+                    <div class="input-menores">
+                        <div class="genero"> 
+                            <label for="genero">Sexo</label>
+                            <input class="input-menor" type="text" placeholder="Sexo" name="genero" required>
+                        </div>
+                        <div class="edad"> 
+                            <label for="Edad">Edad</label>
+                            <input class="input-menor" type="text" placeholder="Edad" name="Edad" required>
+                        </div>
+                    </div>
+
+                    <a href="homeReproductor.html" class="btn btn-login">Registrarse</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <img src="imagenes/footernegro.jpg" alt="Footer">
+        <img class="footer-mobile-dark" src="imagenes/footermobilenegro.jpg" alt="Footer Mobile Dark">
+    </footer>
+</body>
+
+</html>
