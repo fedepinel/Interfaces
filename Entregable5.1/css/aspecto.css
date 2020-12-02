@@ -37,6 +37,23 @@ a:hover{
     width: 130px;
 }
 
+
+.filtros div{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+   
+
+    
+}
+
+.filtros :first-child{
+
+    margin-right: 15%;
+
+    
+}
+
 #logo-barra-nav{
     background: url("../imagenes/logo.png");
     background-size: contain;
@@ -135,13 +152,15 @@ a:hover{
 }
 
 #btn-playlist{
-  height: 10px;
-    font-size: 12px;
-  padding-bottom: 7%;
-  margin-bottom: 10%;
-  margin-top: 4%;
- display: none;
-    
+    height: 38px;
+    font-size: 15px;
+    padding-bottom: 1.8%;
+    margin-bottom: 8px;
+    padding-top: 0.5%;
+    width: 12%;
+    color: #FFFFFF;
+    background-color: transparent;
+
 }
 
 .tarjeta .btn{
@@ -166,6 +185,7 @@ a:hover{
 .encabezado h3{
     font-weight: bold;
     padding: 1% 0;
+    font-size: 25px;
 }
 
 .elementos-precios p{
@@ -450,7 +470,7 @@ footer img{
     top: 0;
     width: 15%;
     height: 100%;
-    background: #030303;
+    background: #111111;
     padding-top: 1.62%;
     padding-left: 1.5%;
     padding-right: 1.5%;
@@ -496,7 +516,7 @@ margin-bottom: 10%;
 .menu-user{
     display: inline-block;
     width: 25px;
-    margin-left: 70px;
+    margin-left: 3.5vw;
 
 }
 
@@ -515,11 +535,6 @@ margin-bottom: 10%;
 
 .contenido-filtro hr{
     margin-top: 0;
-}
-
-.albunes-filtros, .canciones-filtros, .artistas-filtros, .playlist-filtros{
-    
-  
 }
 
 .albunes-filtros div{
@@ -545,7 +560,7 @@ h3{
 .filtros {
     margin-top: 4%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     border-bottom-style: solid;
     border-width: 2px;
 }
@@ -574,7 +589,7 @@ section article img{
     height: 120px;
     left: 0;
     bottom: 0;
-    background: #030303;
+    background: #111111;
     font-family: Ramabhadra;
     font-style: normal;
     font-weight: normal;
@@ -586,7 +601,7 @@ section article img{
 
 hr{
     border: 1px solid #FFFFFF;
-   
+
     margin-top: 10px;
    
 }
@@ -658,6 +673,16 @@ hr{
     width: auto;
 }
 
+.carrousel article .inner .back a img{
+    width: 92%;
+    height: auto;
+    margin-left: 5%;
+}
+
+.carrousel article .inner .back a{
+    margin-left: 5%;
+}
+
 .secundario{
    
     height: 2vh;
@@ -686,7 +711,8 @@ hr{
 
 #expandir{
     transform: rotate(-90deg);
-    margin-left: 99px;
+    align-self: center;
+    margin-right:30px;
     width: auto;
     height: 2vh;
 }
@@ -700,14 +726,18 @@ hr{
 }
 
 #duracion{
+    display: flex;
     position: absolute;
+    align-items: center;
     top: 5px;
-    left: 32.8%;
+    left: 33.5%;
     
 }
 
 #duracion p{
     display: inline-block;
+    margin-bottom: 0;
+    margin-top: 0;
 
 }
 
@@ -729,38 +759,52 @@ hr{
 #titulo-carrousel{
     display: flex;
     align-items: center;
- 
+    justify-content: space-between;
+
     
 }
-#titulo-carrousel img{
-    width: 15px;
-    height: 15px;
-    margin-bottom: 8px;
-    margin-left: 2%;
-    
-}
-
-
-#titulo-carrousel:first-child :nth-child(2){
-    margin-right: 1px;
-    transform: rotate(180deg);
-    
-}
-
 
 
 ::-webkit-scrollbar {
-    display: none;
+    width: 13px;
+    height: 12px;
+   
+    
+  
+  }
+  
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:    #1d1d1d; 
+    border-radius: 10px;
+    
 }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    
+    background:  #181818; 
+    
+  }
+
+
 
 .inicio{
     position: absolute;
     width: 85%;
-    height: 88%;
+    height: 90%;
     left: 15%;
     top: 0;
     padding:  2.3% 50px 0 50px;
-    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
     background-color: #323232;
     color: #FFFFFF;
 
@@ -785,7 +829,7 @@ h1{
 .nav-celu{
     display: none;
     width: 100%;
-    background: #121212;
+    background: #111111;
     color: white;
     
     padding: 1vh 8vw;
@@ -837,7 +881,7 @@ h1{
     z-index: 10;
     width: 100%;
     height: 9%;
-    background: #121212;
+    background: #181818;
     align-items: center;
     padding: 0 8vw;
     color: #FFFFFF;
@@ -864,16 +908,102 @@ h1{
    
 }
 
+
+
 .carrousel{
     display: flex;
     align-items: center;
     color: hsl(0, 0%, 100%);
     margin-bottom: 3.9%;
     margin-top: 2%;
-    overflow: scroll;
-    padding: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: pointer;
+
+    padding-bottom: 1%;
     
 }
+
+.back{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    padding: 10%;
+    justify-content: space-between !important;
+    margin-top: 3% !important;
+    margin-bottom: 0;
+    transform: rotateY(180deg) translateZ(15px);
+    backface-visibility: hidden;
+    box-shadow: 10px 10px 18px 0 rgba(0, 0, 0, 0.685);
+    background-color: #1f1e1e !important;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 1px;
+    cursor: auto;    
+   
+
+}
+
+
+
+.table th{
+    border-top-style: none;
+}
+
+ .table td {
+    border-style: none !important;
+   
+   
+}
+
+.front{
+  position: absolute;
+  backface-visibility: hidden;
+  box-shadow: 10px 10px 18px 0 rgba(0, 0, 0, 0.685);
+
+
+}
+
+
+#flip{
+    perspective: 1000px;
+    background-color: transparent;
+  
+    
+    
+    
+}
+
+.inner{
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+
+
+#flip:hover .inner {
+    transform: rotateY(180deg);
+  
+}
+
+.carrousel article .inner .back img{
+    width: 45%;
+    border-radius: 50%;
+    box-shadow: 10px 10px 8px 0 rgba(0, 0, 0, 0.685);
+    height: auto;
+}
+
+.carrousel article .inner .back :nth-child(2){
+    margin-top: 4.5%;
+}
+
+.active{ 
+   color: #F7A325;   
+}
+
+
+
 
 .carrousel img {
     max-width: 150px;
@@ -888,9 +1018,14 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 3%;
+    
+  
+    margin-right: 2.5%;
     text-align: center;
+  
     max-width: 150px;
+    height: auto;
+     
   
 }
 
@@ -903,6 +1038,7 @@ h1{
 
 .carrousel article :nth-child(3){
     font-size: 13px;
+    margin-bottom: 3%;
     
  
 }
@@ -981,15 +1117,12 @@ h1{
 #titulo-contenido{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 4%;
-}
-#titulo-contenido h1{
+    margin-bottom: 3%;
+    align-items: center;
+  
     
-    border-color: #F7A325;
-    border-width: 2px;
-    border-bottom-style: solid;
-
 }
+
 
 /* detalle PLaylist */
 
@@ -1005,16 +1138,18 @@ h1{
     height: 50px;
 }
 
-.detalle :first-child{
+#img-playlist{
     width: 18%;
     margin-right: 3%;
     height: auto;
+    border-radius: 18px;
+    box-shadow: 10px 10px 25px 0 rgba(0, 0, 0, 0.685);
 }
 
 #estrellas-playlist{
     width: 30%;
     margin-top: 4%;
-    margin-bottom: 12%;
+    margin-bottom: 8%;
 
 }
 
@@ -1050,7 +1185,8 @@ table, td, tr{
 
 
 table{
-    margin-top: 4%;
+    margin-top: 5%;
+    margin-bottom: 5% !important;
 }
 #canciones-playlist{
     color: #FFFFFF;
@@ -1062,17 +1198,67 @@ table{
     height: 20px;
 }
 
+.j{
+    width: 25%;
+}
+
+
 
 #titulo-contenido :nth-child(2){
-  width: 30%;
-    margin-right: -4%;
+    display: flex;
+    justify-content: flex-end;
+    
 }
+
+.votosRecientes2 article:hover{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 10px 10px 18px 0 rgba(0, 0, 0, 0.685);
+    animation: efectoVoto 1s forwards;
+}
+
+@keyframes efectoVoto{
+    from {
+        transform: scale3d(1, 1, 1)
+    }
+    
+    to {
+        transform: scale3d(1.1, 1.1, 1.5);
+    }
+}
+
+
+
+table tbody tr:hover{
+    box-shadow: 10px 10px 18px 0 rgba(0, 0, 0, 0.685);
+    animation: efectoTabla 1s forwards;
+}
+
+@keyframes efectoTabla{
+    from {
+        transform: scale3d(1, 1, 1)
+    }
+    
+    to {
+        transform: scale3d(1.05, 1.05, 1.1);
+    }
+}
+
+
+.btn-vermas-busqueda{
+    background-color: transparent;
+    border-radius: 10px;
+    border: solid white 2px;
+    color: white;
+    min-height: 38px;
+}
+
 #popvoto{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 40%;
-    left: 40%;
+    top: 71.2%;
+    left: 23.4%;
     right: 0;
     z-index: 330;
     width: 20%;
@@ -1136,38 +1322,225 @@ ul{
   }
 
 
-  #votosRecientes{
-display: none;}
+ 
 
 .votosRecientes2{
-    padding: 3% 0;
+    padding: 2% 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    overflow: scroll;
+    margin-bottom: 10%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 5%;
    
 
 }
 
+
+
 .votosRecientes2 img{
-  width: 80px;
+  width: 100px;
   height: auto;
+  border-radius: 10px;
+  margin: 0;
+
+}
+.votosRecientes2 article{
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+    margin-right: 3%;
+    height: 200px;
+    justify-content: space-between;
+}
+  
+
+table tr :first-child {
+    
+    width: 10%;
+    
+}
+
+ 
+
+
+table tr :last-child {
+    text-align: end;
+    width: 1%;
+    
+}
+
+.datos-generales{
+    padding-top: 4%;
+    margin-bottom: 5%;
+  
+}
+
+.input-group{
+    width: 30%;
+}
+
+.comentario{
+    display: flex;
+    max-width: 400px;
+    min-width: 300px;
+    margin-right: 1%;
 
 }
 
+.comentario div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 3%;
+   
+}
 
+.comentario img{
+    
+    width: 100px !important;
+    height: auto;
+    border-radius: 10px;
+
+
+}
+
+.comentarios{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding-bottom: 1.5%;
+
+}
+
+.filtros p{
+    margin-bottom: 0;
+    margin-right: 0 !important;
+}
 
 @media only screen and (max-width: 600px){
+    .filtros{
+        margin-bottom: 10%;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .filtros div{
+        width: 100%;
+        padding: 2%;
+    }
 
-    #votosRecientes{
-        position: absolute;
-        right: 6%;
-        display: block;
-        top: 200%;
-        width: 84%;
+    .btn-vermas-busqueda{
+        min-height: 28px;
+    }
+
+    .comentarios{
+      
+       flex-direction: column;
+    }
+    .datos-generales h2{
+        margin-top: 0 !important;
+    }
+    .comentario{
+        height: 60px;
+    }
+
+    .input-group button {
+        height: 38px !important;
+    }
+
+    .input-group {
+        margin-bottom: 0 !important;
+    }
+    .comentario img{
+    
+        width: 60px !important;
+        height: 60px !important;
+      
+    
+    }
+    .comentario div{
+        padding-bottom: 24px;
+       
+    }
+    
+.input-group{
+    width: 100%;
+}
+
+    .datos-generales{
+        padding-top: 10%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .comentarios{
+        height: 300px;
+        margin-top: 6%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .comentarios .comentario{
+        margin-bottom: 5%;
+        
+    }
+
+    .datos-generales p{
+        margin: 4% 0;
+    }
+
+    span{
+       display: none;
+    }
+
+    .titulo-cancion-table{
+        min-width: 170px;
+    }
+
+    #navbarSupportedContent a{
+        font-size: 15px;
+        color: #FFFFFF;
+        text-align: start;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    #estrellas-playlist{
+        width: auto;
+    }
+
+    .votosRecientes2 img{
+        width: 60px;
+        height: auto;
+        border-radius: 10px;
+      
+      }
+
+    .votosRecientes2 article{
+        max-width: 60px;
+        margin-right: 15px;
         height: auto;
     }
-  
+      
+    .votosRecientes2 {
+      padding-bottom: 5%;
+    }
+
+
+    .back, .front, .inner, #flip{
+        height: 80px ;
+        width: 80px;
+        min-height: 80px !important;
+        min-width: 80px !important;
+    }
+
+    
+    
 
     .j{
         display: none;
@@ -1223,7 +1596,7 @@ display: none;}
      
     }
 
-    .detalle :first-child{
+    #img-playlist{
         width: 70%;
         margin-left: auto;
         margin-right: auto;
@@ -1257,8 +1630,11 @@ display: none;}
     }
 
     #btn-playlist{
-      
-       display: block;
+        width: 40%;
+        font-size: 12px;
+        height: 25px;
+        padding-bottom: 0.4%;
+        
           
       }
     /* Barra nav */
@@ -1269,7 +1645,7 @@ display: none;}
     #fondo-barra{
         padding: 4%;
         width: 100%;
-        height: 15%;
+        height: 9%;
     }
 
     #logo{
@@ -1503,8 +1879,8 @@ display: none;}
 
 
     .carrousel{
-        margin-top: 0;
-        padding: 1%;
+       margin-top: 4%;
+        padding-bottom: 3%;
         margin-bottom: 10%;
     }
     
@@ -1514,16 +1890,10 @@ display: none;}
 
     }   
 
-    #titulo-contenido {
-        position: absolute;
-        right: 0;
-        top: 0;
-        left : -220%;
-        margin-right: 10%;
-    }
+    
     
 
-    #titulo-contenido h1{
+    #titulo-contenido{
         display: none;
     }
     
@@ -1545,6 +1915,7 @@ display: none;}
         height: 12%;
         width: 100%;
         padding-bottom: 0;
+        background: #030303;
     }
     .reproductor #duracion, .secundario,  .acciones, .config , .shuffle{
         display: none;}
@@ -1590,6 +1961,10 @@ display: none;}
         display: block;
 
     }
+    #expandir{
+        display: none;
+
+    }
 
     .menu{
         display: none;
@@ -1600,9 +1975,9 @@ display: none;}
         width: 100%;
         padding-left: 8vw;
         padding-right: 8vw;
-        padding-top: 20%;
+        padding-top: 9% !important;
         height: 70%;
-        overflow: scroll;
+       
       
     }
     h1{

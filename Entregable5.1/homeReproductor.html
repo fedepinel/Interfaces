@@ -30,7 +30,7 @@
             <hr>
         </section>
         <section class="inicio-menu">
-            <a href="homeReproductor.html"><p>Inicio</p></a>
+            <a href="homeReproductor.html"><p class="active">Inicio</p></a>
             <p>Explorar</p>
         </section>
         <section class="mi-coleccion">
@@ -80,87 +80,217 @@
        <a href="">Planes</a>
        <a href="">Desconectarse</a>
    </aside>
+
+   <!-- Seccion de canciones -->
     <section class="inicio pt-5">
         <section id="titulo-contenido">
             <div>
-                <h1>Inicio</h1>
-               
+                <h1>Inicio</h1>              
             </div>
-            <div class="input-group mb-3 buscador">
+            <div class="input-group mb-3 j">
                 <input type="text" class="form-control" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <div class="input-group-append">
+                <div >
                     <a class="btn btn-outline-secondary" href="busqueda.html" id="button-addon2"><img src="css/imagenes/logos/lupa.png" alt="" style="width: 20px;"></a>
                 </div>
               </div>
         </section>
-        <section class="destacado">
-            <div id="titulo-carrousel"> 
-                <h2>Destacado</h2>
-                <img src="css/imagenes/logos/flecha.png" alt="">
-                <img src="css/imagenes/logos/flecha.png" alt="">
-            </div>
+        <section class="destacado">   
+            <h1>Canciones destacadas</h1>               
             <section class="carrousel">
                 <article>
-                    <img src="imagenes/albunes/lz4.jpg" alt="">
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/lz4.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <a href="miCancion.html"><img src="imagenes/informacion.png" alt=""></a>
+                            </div>
+    
+                        </div>
+
+                    </div>
                     <p>Stairway to Heaven.</p>
                     <p>Led Zeppelin</p>
                 </article>
 
                 <article>
-                    <img src="imagenes/albunes/51JrQmiqFXL.jpg" alt="">
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/boston.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
                     <p>More Than a Feeling.</p>
                     <p>Boston</p>
                 </article>
                 <article>
-                    <img src="imagenes/albunes/81TnWHafWdL._SL1448_.jpg" alt="">
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/californication.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
                     <p>Californication.</p>
                     <p>Red Hot Chili Peppers</p>
                 </article>
                 <article>
-                    <img src="imagenes/albunes/lz4.jpg" alt="">
-                    <p>Stairway to Heaven.</p>
-                    <p>Led Zeppelin</p>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/audioslave.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <p>I am the Highway</p>
+                    <p>Audioslave</p>
                 </article>
 
                 <article>
-                    <img src="imagenes/albunes/51JrQmiqFXL.jpg" alt="">
-                    <p>More Than a Feeling.</p>
-                    <p>Boston</p>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/soda.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <p>Sobredosis de T.V.</p>
+                    <p>Soda Stereo</p>
                 </article>
                 <article>
-                    <img src="imagenes/albunes/lz4.jpg" alt="">
-                    <p>Stairway to Heaven.</p>
-                    <p>Led Zeppelin</p>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/decadentes.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <p>La guitarra</p>
+                    <p>Autenticos Decadentes</p>
                 </article>
 
                 <article>
-                    <img src="imagenes/albunes/51JrQmiqFXL.jpg" alt="">
-                    <p>More Than a Feeling.</p>
-                    <p>Boston</p>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/duranduran.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <p>Come Undone</p>
+                    <p>Duran Duran</p>
                 </article>
                 <article>
-                    <img src="imagenes/albunes/81TnWHafWdL._SL1448_.jpg" alt="">
-                    <p>Californication.</p>
-                    <p>Red Hot Chili Peppers</p>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/impuestoDeFe.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <p>Como eran las cosas</p>
+                    <p>Babasonicos</p>
                 </article>
                 <article>
-                    <img src="imagenes/albunes/lz4.jpg" alt="">
-                    <p>Stairway to Heaven.</p>
-                    <p>Led Zeppelin</p>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/kiss.jpeg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <p>Is That You?</p>
+                    <p>Kiss</p>
                 </article>
 
                 <article>
-                    <img src="imagenes/albunes/51JrQmiqFXL.jpg" alt="">
-                    <p>More Than a Feeling.</p>
-                    <p>Boston</p>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/Led-Zeppelin-III.gif" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <p>Immigrant Song</p>
+                    <p>Led Zeppelin</p>
                 </article>
                 <article>
-                    <img src="imagenes/albunes/51JrQmiqFXL.jpg" alt="">
-                    <p>More Than a Feeling.</p>
-                    <p>Boston</p>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/toto.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <p>Africa</p>
+                    <p>Toto</p>
                 </article>
             </section>
         </section>
+
         <section class="coleccion">
             <h1>Mi coleccion</h1>
             <section class="carrousel">
@@ -169,15 +299,12 @@
                         <img src="css/imagenes/logos/cancion.png" alt="">
                     </div>
                     <p>Canciones</p>
-
                 </article>
-
                 <article>
                     <div>
                         <img src="css/imagenes/logos/podcast.png" alt="">
                     </div>
                     <p>Podcasts</p>
-
                 </article>
                 <article>
                     <div>
@@ -194,46 +321,79 @@
                 <article>
                     <div>
                         <img src="css/imagenes/logos/album.png " alt="">
-
                     </div>
                     <p>Albunes</p>
                 </article>
             </section>
-        </section>
-
-        
+        </section>      
       
         <section class="mixes">
-            <h2>Mixes pensados para ti</h2>
-            <section class="carrousel">
-               
+            <h1>Mixes pensados para ti</h1>
+            <section class="carrousel">             
                 <article>
-                    <img src="imagenes/albunes/mixes/mixes1.png" alt="">
-                    <p>Mix 1</p>
-                   
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes1.png" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <p>Mix 1</p>          
                 </article>
                 <article>
-                    <img src="imagenes/albunes/mixes/mixes2.jpg" alt="">
-                    <p>Mix 2</p>
-                    
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes2.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>   
+                        </div>
+                    </div>
+                    <p>Mix 2</p>                   
                 </article>
                 <article>
-                    <img src="imagenes/albunes/mixes/mixes3.png" alt="">
-                    <p>Mix 3</p>
-                   
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes3.png" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>   
+                        </div>
+                    </div>
+                    <p>Mix 3</p>                   
                 </article>
-
                 <article>
-                    <img src="imagenes/albunes/mixes/mixes4.png" alt="">
-                    <p>Mix 4</p>
-                
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes4.png" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>    
+                        </div>
+                    </div>
+                    <p>Mix 4</p>                
                 </article>
             </section>
         </section>
 
 
     </section>
+    <!-- Fin seccion de canciones -->
 
+    <!-- Pop up votacion -->
     <div id="popvoto" class="d-none">
         <h2>Dejanos tu puntaje</h2>
         <ul class="ratings">
@@ -246,7 +406,7 @@
         <button  id="voto" type="button" class="btn btn-warning">Votar</button>
     </div>
 
-
+    <!-- Reproductor inferior -->
     <section class="reproductor">
         <article id="duracion">
             <p>0:00</p>
@@ -255,19 +415,22 @@
         </article>
         <div class="contenedor">
             <section class="cancion-reproduciendo">
-                <article>
-                    <img id="expandir2" src="css/imagenes/logos/flecha.png" alt="">
-                </article>
-                <article>
-                    <img src="imagenes/albunes/lz4.jpg" alt="">
+              
+                <img id="expandir" src="css/imagenes/logos/flecha.png" alt="">
+           
+            <article>
+                <img id="expandir2" src="css/imagenes/logos/flecha.png" alt="">
+            </article>
+            <article>
+                <img src="imagenes/albunes/lz4.jpg" alt="">
 
-                </article>
-                <article>
-                    <p id="titulo-cancion">Stairway to heaven</p>
-                    <p>Led Zeppelin IV</p>
-                    <p>Led Zeppelin </p>
-                </article>
-            </section>
+            </article>
+            <article>
+                <p id="titulo-cancion">Stairway to heaven</p>
+                <p>Led Zeppelin IV</p>
+                <p>Led Zeppelin </p>
+            </article>
+        </section>
             <section class="acciones">
                 <article>
                     <img src="css/imagenes/logosReproductor/corazon.png" alt="">
@@ -300,18 +463,15 @@
                 <article>
                     <input id="volumen" type="range" id="vol" name="vol" min="0" max="50">
                 </article>
-                <article>
-                    <img id="expandir" src="css/imagenes/logos/flecha.png" alt="">
-                </article>
             </section>
-
         </div>
-
     </section>
+
+    <!-- Barra inferior celular -->
     <section class="nav-celu">
         <article>
             <img src="css/imagenes/logos/homeAmarillo.png">
-            <p>Home</p>
+            <p class="active">Home</p>
         </article>
         <article>
             <img src="css/imagenes/logos/lupa.png" alt="">

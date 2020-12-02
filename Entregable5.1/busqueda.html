@@ -86,64 +86,80 @@
                 <h1>Busqueda</h1>
 
             </div>
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Buscar" aria-label="Recipient's username"
-                    aria-describedby="button-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img
-                            src="css/imagenes/logos/lupa.png" alt="" style="width: 20px;"></button>
+            <div class="input-group mb-3 j">
+                <input type="text" class="form-control" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div >
+                    <a class="btn btn-outline-secondary" href="busqueda.html" id="button-addon2"><img src="css/imagenes/logos/lupa.png" alt="" style="width: 20px;"></a>
                 </div>
-            </div>
+              </div>
         </section>
         <p>Resultados de busqueda para: Red Hot Chili Peppers </p>
 
         <section class="filtros">
-            <p>Todo</p>
-            <p>Canciones</p>
-            <p>Albunes</p>
-            <p>Artistas</p>
-            <p>Podcast</p>
-            <p>Playlists</p>
+            <div>
+                <p class="active">Todo</p>
+                <p>Canciones</p>
+                <p>Albunes</p>
+
+            </div>
+            <div>
+                <p>Artistas</p>
+                <p>Podcast</p>
+                <p>Playlists</p>
+
+            </div>
         </section>
 
-
-        <section class="contenido-filtro">
-            
-
-            
-          
+        <section class="contenido-filtro">          
             </section>
-            
-
         <section class="canciones-filtros">
             <div>
                 <h2>Canciones</h2>
-                <h3>ver mas</h3>
+                <button type="button" class="btn-vermas-busqueda">Ver mas</button>
             </div>
             <hr>
-            <section class="mixes">
-               
-                <section class="carrousel">
-                   
+            <section class="mixes">               
+                <section class="carrousel">                  
                     <article>
-                        <img src="imagenes/albunes/mixes/mixes1.png" alt="">
-                        <p>Mix 1</p>
+                        <img src="imagenes/albunes/californication.jpg" alt="">
+                        <p>Californication</p>
                        
                     </article>
                     <article>
-                        <img src="imagenes/albunes/mixes/mixes2.jpg" alt="">
-                        <p>Mix 2</p>
+                        <img src="imagenes/albunes/californication.jpg" alt="">
+                        <p>Scar Tissue</p>
                         
                     </article>
                     <article>
-                        <img src="imagenes/albunes/mixes/mixes3.png" alt="">
-                        <p>Mix 3</p>
+                        <img src="imagenes/albunes/stadium.jpg" alt="">
+                        <p>Snow (Hey Oh)</p>
                        
                     </article>
     
                     <article>
-                        <img src="imagenes/albunes/mixes/mixes4.png" alt="">
-                        <p>Mix 4</p>
+                        <img src="imagenes/albunes/bloodsugar.jpg" alt="">
+                        <p>Under the Bridge</p>
+                    
+                    </article>
+                    <article>
+                        <img src="imagenes/albunes/californication.jpg" alt="">
+                        <p>Californication</p>
+                       
+                    </article>
+                    <article>
+                        <img src="imagenes/albunes/californication.jpg" alt="">
+                        <p>Scar Tissue</p>
+                        
+                    </article>
+                    <article>
+                        <img src="imagenes/albunes/stadium.jpg" alt="">
+                        <p>Snow (Hey Oh)</p>
+                       
+                    </article>
+    
+                    <article>
+                        <img src="imagenes/albunes/bloodsugar.jpg" alt="">
+                        <p>Under the Bridge</p>
                     
                     </article>
                 </section>
@@ -153,7 +169,61 @@
         <section class="albunes-filtros">
             <div>
                 <h2>Albunes</h2>
-                <h3>ver mas</h3>
+                <button type="button" class="btn-vermas-busqueda">Ver mas</button>
+            </div>
+            <hr>
+
+            <section class="carrousel">
+
+                <article>
+                    <img src="imagenes/albunes/californication.jpg" alt="">
+                    <p>Californication</p>
+
+                </article>
+                <article>
+                    <img src="imagenes/albunes/stadium.jpg" alt="">
+                    <p>Stadium Arcadium</p>
+
+                </article>
+                <article>
+                    <img src="imagenes/albunes/bloodsugar.jpg" alt="">
+                    <p>Blood Sugar Sex Magik</p>
+
+                </article>
+
+                <article>
+                    <img src="imagenes/albunes/thegetaway.jpg" alt="">
+                    <p>The Getaway</p>
+
+                </article>
+                <article>
+                    <img src="imagenes/albunes/californication.jpg" alt="">
+                    <p>Californication</p>
+
+                </article>
+                <article>
+                    <img src="imagenes/albunes/stadium.jpg" alt="">
+                    <p>Stadium Arcadium</p>
+
+                </article>
+                <article>
+                    <img src="imagenes/albunes/bloodsugar.jpg" alt="">
+                    <p>Blood Sugar Sex Magik</p>
+
+                </article>
+
+                <article>
+                    <img src="imagenes/albunes/thegetaway.jpg" alt="">
+                    <p>The Getaway</p>
+
+                </article>
+            </section>
+
+        </section>
+        <section class="albunes-filtros">
+            <div>
+                <h2>Playlist</h2>
+                <button type="button" class="btn-vermas-busqueda">Ver mas</button>
             </div>
             <hr>
 
@@ -180,18 +250,6 @@
                     <p>Mix 4</p>
 
                 </article>
-            </section>
-
-        </section>
-        <section class="albunes-filtros">
-            <div>
-                <h2>playlist</h2>
-                <h3>ver mas</h3>
-            </div>
-            <hr>
-
-            <section class="carrousel">
-
                 <article>
                     <img src="imagenes/albunes/mixes/mixes1.png" alt="">
                     <p>Mix 1</p>
@@ -248,19 +306,22 @@
         </article>
         <div class="contenedor">
             <section class="cancion-reproduciendo">
-                <article>
-                    <img id="expandir2" src="css/imagenes/logos/flecha.png" alt="">
-                </article>
-                <article>
-                    <img src="imagenes/albunes/lz4.jpg" alt="">
+              
+                <img id="expandir" src="css/imagenes/logos/flecha.png" alt="">
+           
+            <article>
+                <img id="expandir2" src="css/imagenes/logos/flecha.png" alt="">
+            </article>
+            <article>
+                <img src="imagenes/albunes/lz4.jpg" alt="">
 
-                </article>
-                <article>
-                    <p id="titulo-cancion">Stairway to heaven</p>
-                    <p>Led Zeppelin IV</p>
-                    <p>Led Zeppelin </p>
-                </article>
-            </section>
+            </article>
+            <article>
+                <p id="titulo-cancion">Stairway to heaven</p>
+                <p>Led Zeppelin IV</p>
+                <p>Led Zeppelin </p>
+            </article>
+        </section>
             <section class="acciones">
                 <article>
                     <img src="css/imagenes/logosReproductor/corazon.png" alt="">
@@ -293,9 +354,7 @@
                 <article>
                     <input id="volumen" type="range" id="vol" name="vol" min="0" max="50">
                 </article>
-                <article>
-                    <img id="expandir" src="css/imagenes/logos/flecha.png" alt="">
-                </article>
+               
             </section>
 
         </div>

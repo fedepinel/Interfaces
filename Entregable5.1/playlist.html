@@ -21,7 +21,6 @@
 
 <body>
     <!-- barra nav -->
-
     <aside class="menu">
         <section class="user">
             <img class="imagen-perfil" src="css/imagenes/redes/perfil.jpg" alt="imagen perfil">
@@ -55,17 +54,13 @@
                 <p>Podcast</p>
             </article>
             <article>
-                <img src="css/imagenes/logos/playlist.png" alt="">
-                <a href="playlist.html"><p>Playlist</p></a>
+                <img src="css/imagenes/logos/playlistAmarillo.png" alt="">
+                <a href="playlist.html"><p class="active">Playlist</p></a>
             </article>
-
         </section>
+    </aside>   
 
-    </aside>
-
-
-    
-
+    <!-- Pop up Voto -->
     <div id="popvoto" class="d-none">
         <h2>Dejanos tu puntaje</h2>
         <ul class="ratings">
@@ -104,144 +99,391 @@
             </div>
             <div class="input-group mb-3 j">
                 <input type="text" class="form-control" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <div class="input-group-append">
+                <div >
                     <a class="btn btn-outline-secondary" href="busqueda.html" id="button-addon2"><img src="css/imagenes/logos/lupa.png" alt="" style="width: 20px;"></a>
                 </div>
               </div>
         </section>
         <section class="destacado">
             <div id="titulo-carrousel"> 
-                <h2>Mis playlist</h2>
-                <img src="css/imagenes/logos/flecha.png" alt="">
-                <img src="css/imagenes/logos/flecha.png" alt="">
+                <h2>Mis playlist</h2>             
+                <button type="button"  id="btn-playlist" class="btn btn-light">Nueva playlist +</button>
             </div>
-            <button type="button"  id="btn-playlist" class="btn btn-light">Nueva playlist +</button>
             <section class="carrousel">
                 <article>
-                    <img src="imagenes/albunes/mixes/mixes1.png" alt="">
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes5.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
                     <p>Playlist 1</p>
                 </article>
 
                 <article>
-                    <a href="miPlaylist.html"><img src="imagenes/albunes/mixes/mixes1.png" alt=""></a>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes6.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
                     <p>Playlist 2 </p>
                 </article>
                 <article>
-                    <a href="miPlaylist.html"><img src="imagenes/albunes/mixes/mixes1.png" alt=""></a>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes7.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
                     <p>Playlist 3</p>
                 </article>
                 <article>
-                    <a href="miPlaylist.html"><img src="imagenes/albunes/mixes/mixes1.png" alt=""></a>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes3.png" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <a href="miPlaylist.html"><img src="imagenes/informacion.png" alt=""></a>
+                            </div>
+    
+                        </div>
+
+                    </div>
                     <p>Playlist 4</p>
                 </article>
 
                 <article>
-                    <a href="miPlaylist.html"><img src="imagenes/albunes/mixes/mixes1.png" alt=""></a>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes9.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
                     <p>Playlist 5</p>
                 </article>
                 <article>
-                    <img src="imagenes/albunes/mixes/mixes1.png" alt="">
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes10.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
                     <p>Playlist 6</p>
                 </article>
 
                 <article>
-                    <img src="imagenes/albunes/mixes/mixes1.png" alt="">
-                    <p>Playlist7</p>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes11.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <p>Playlist 7</p>
                 </article>
                 <article>
-                    <img src="imagenes/albunes/mixes/mixes1.png" alt="">
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes12.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
                     <p>Playlist 8</p>
                    
                 </article>
                 <article>
-                    <img src="imagenes/albunes/mixes/mixes1.png" alt="">
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes13.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
                     <p>Playlist 9</p>
                     
                 </article>
 
                 <article>
-                    <img src="imagenes/albunes/mixes/mixes1.png" alt="">
-                    <p>Playlist.</p>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes14.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <p>Playlist 10</p>
                   
                 </article>
                 <article>
-                    <img src="imagenes/albunes/mixes/mixes1.png" alt="">
-                    <p>Playlist.</p>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes15.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <p>Playlist 11</p>
                    
                 </article>
             </section>
-        <section class="playlist">
+        <section class="destacado">
             <div id="titulo-carrousel"> 
                 <h2>Las mas buscadas</h2>
-                <img src="css/imagenes/logos/flecha.png" alt="">
-                <img src="css/imagenes/logos/flecha.png" alt="">
+              
             </div>
             <section class="carrousel">
                
                 <article>
-                    <div>
-                    <img src="css/imagenes/logos/playlist.png" alt="">
-                </div>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes16.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
                     <p>Playlist 1</p>
-                   
-                </article>
-                <article>
-                    <div>
-                        <img src="css/imagenes/logos/playlist.png" alt="">
-                    </div>
-                    <p>Playlist 2</p>
-                    
-                </article>
-                <article>
-                    <div>
-                        <img src="css/imagenes/logos/playlist.png" alt="">
-                    </div>
-                    <p>Playlist 3</p>
-                   
-                </article>
-                <article>
-                    <div>
-                        <img src="css/imagenes/logos/playlist.png" alt="">
-                    </div>
-                    <p>Playlist 3</p>
-                   
-                </article>
-                <article>
-                    <div>
-                        <img src="css/imagenes/logos/playlist.png" alt="">
-                    </div>
-                    <p>Playlist 3</p>
-                   
                 </article>
 
-
                 <article>
-                    <div>
-                        <img src="css/imagenes/logos/playlist.png" alt="">
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes17.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <p>Playlist 2 </p>
+                </article>
+                <article>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes18.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <p>Playlist 3</p>
+                </article>
+                <article>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes19.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
                     </div>
                     <p>Playlist 4</p>
-                
                 </article>
-                 
+
                 <article>
-                    <div>
-                        <img src="css/imagenes/logos/playlist.png" alt="">
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes20.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
                     </div>
-                    <p>Playlist  5</p>
+                    <p>Playlist 5</p>
+                </article>
+                <article>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes21.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <p>Playlist 6</p>
+                </article>
+
+                <article>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes22.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <p>Playlist 7</p>
+                </article>
+                <article>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes23.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <p>Playlist 8</p>
                    
                 </article>
                 <article>
-                    <div>
-                        <img src="css/imagenes/logos/playlist.png" alt="">
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes24.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
                     </div>
-                    <p>Playlist 6</p>
+                    <p>Playlist 9</p>
                     
                 </article>
+
                 <article>
-                    <div>
-                        <img src="css/imagenes/logos/playlist.png" alt="">
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes25.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
                     </div>
-                    <p>Playlist 7</p>
+                    <p>Playlist 10</p>
+                  
+                </article>
+                <article>
+                    <div id="flip">
+                        <div class="inner">
+                            <div class="front">
+                                <img src="imagenes/albunes/mixes/mixes26.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <img src="imagenes/play.png" alt="">
+                                <img src="imagenes/informacion.png" alt="">
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <p>Playlist 11</p>
                    
                 </article>
             </section>
@@ -260,19 +502,22 @@
         </article>
         <div class="contenedor">
             <section class="cancion-reproduciendo">
-                <article>
-                    <img id="expandir2" src="css/imagenes/logos/flecha.png" alt="">
-                </article>
-                <article>
-                    <img src="imagenes/albunes/lz4.jpg" alt="">
+              
+                <img id="expandir" src="css/imagenes/logos/flecha.png" alt="">
+           
+            <article>
+                <img id="expandir2" src="css/imagenes/logos/flecha.png" alt="">
+            </article>
+            <article>
+                <img src="imagenes/albunes/lz4.jpg" alt="">
 
-                </article>
-                <article>
-                    <p id="titulo-cancion">Stairway to heaven</p>
-                    <p>Led Zeppelin IV</p>
-                    <p>Led Zeppelin </p>
-                </article>
-            </section>
+            </article>
+            <article>
+                <p id="titulo-cancion">Stairway to heaven</p>
+                <p>Led Zeppelin IV</p>
+                <p>Led Zeppelin </p>
+            </article>
+        </section>
             <section class="acciones">
                 <article>
                     <img src="css/imagenes/logosReproductor/corazon.png" alt="">
@@ -302,12 +547,10 @@
                 <article>
                     <img src="css/imagenes/logosReproductor/volumen.png" alt="">
                 </article>
-                <article>
+                <article class="mr-3">
                     <input id="volumen" type="range" id="vol" name="vol" min="0" max="50">
                 </article>
-                <article>
-                    <img id="expandir" src="css/imagenes/logos/flecha.png" alt="">
-                </article>
+               
             </section>
 
         </div>
@@ -315,8 +558,8 @@
     </section>
     <section class="nav-celu">
         <article>
-            <img src="css/imagenes/logos/home.png">
-            <p>Home</p>
+            <img src="css/imagenes/logos/homeAmarillo.png">
+            <p class="active">Home</p>
         </article>
         <article>
             <img src="css/imagenes/logos/lupa.png" alt="">
