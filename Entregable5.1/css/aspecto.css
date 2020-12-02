@@ -1004,7 +1004,6 @@ h1{
 
 
 
-
 .carrousel img {
     max-width: 150px;
     width: 150px;
@@ -1362,6 +1361,18 @@ table tr :first-child {
     width: 10%;
     
 }
+.votosRecientes2 article{
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+    margin-right: 3%;
+    height: 200px;
+    justify-content: space-between;
+}
+  
+
+  
+
 
  
 
